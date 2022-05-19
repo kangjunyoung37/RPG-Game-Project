@@ -15,7 +15,12 @@ public class ControllerCharacter : MonoBehaviour
     public LayerMask groundLayerMask;
     public float groundCheckDistance = 0.3f;
 
-    private Vector3 calcVelocity;
+    [SerializeField]
+    private Animator animator;
+
+    readonly int moveHash = Animator.StringToHash("Move");
+    readonly int fallingHash = Animator.StringToHash("Falling");
+
 
     #endregion Variables
     void Start()
@@ -32,25 +37,31 @@ public class ControllerCharacter : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+
+
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
 
             RaycastHit hit;
-            if (Physics.Raycast(ray,out hit , 100 ,groundLayerMask))
+            if (Physics.Raycast(ray, out hit, 100, groundLayerMask))
             {
                 Debug.Log("we hit" + hit.collider.name + " " + hit.point);
 
                 agent.SetDestination(hit.point);
 
             }
-            if(agent.remainingDistance > agent.stoppingDistance)
+        }
+        if(agent.remainingDistance > agent.stoppingDistance)
             {
                 characterController.Move(agent.velocity * Time.deltaTime);
+                animator.SetBool(moveHash , true);
             }
-            else
+        else
             {
                 characterController.Move(Vector3.zero);
+                animator.SetBool(moveHash, false);
             }
-        }
+        
+        
     }
     private void LateUpdate()
     {
