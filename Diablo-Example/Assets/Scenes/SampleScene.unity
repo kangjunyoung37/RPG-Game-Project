@@ -686,7 +686,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 43b52acba59722d48b0b9cf140f32775, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.56
+      value: 2.32
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 43b52acba59722d48b0b9cf140f32775, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1123,6 +1123,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1188,13 +1189,31 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 10.51, z: -17.65}
+  m_LocalRotation: {x: 0.36651582, y: 0.35128137, z: -0.15181582, w: 0.8480682}
+  m_LocalPosition: {x: -3.5355341, y: 7.6343765, z: -3.5355337}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35f1f79716f75e645a60a620f3de7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  height: 5.3143764
+  distanse: 5
+  angle: 45
+  lookAtHeight: 0
+  smoothSpeed: 0.5
+  target: {fileID: 1593841797}
 --- !u!1 &1157545575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,6 +1604,11 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 43b52acba59722d48b0b9cf140f32775, type: 3}
   m_PrefabInstance: {fileID: 526767433}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1593841797 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 43b52acba59722d48b0b9cf140f32775, type: 3}
+  m_PrefabInstance: {fileID: 526767433}
+  m_PrefabAsset: {fileID: 0}
 --- !u!195 &1593841798
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1624,7 +1648,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &1593841800
 MonoBehaviour:
   m_ObjectHideFlags: 0
