@@ -33,7 +33,7 @@ namespace kang.Characters {
 
         public override void Update(float deltaTime)
         {
-           
+            
         }
     }
 }

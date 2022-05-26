@@ -22,7 +22,7 @@ namespace kang.Characters
         }
         public override void OnEnter()
         {
-            agent?.SetDestination(context.target.position);
+            agent?.SetDestination(context.Target.position);
             animator?.SetBool(hasMove, true);
         }
 
@@ -32,11 +32,12 @@ namespace kang.Characters
            
             if (enemy)
             {
-                agent.SetDestination(enemy.position);
+                agent.SetDestination(context.Target.position);
                 if(agent.remainingDistance > agent.stoppingDistance)
                 {
                     controller.Move(agent.velocity * deltaTime);
                     animator.SetFloat(hasMoveSpeed, agent.velocity.magnitude / agent.speed, 1f, deltaTime);
+                    return;
                 }
             }
             

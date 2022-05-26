@@ -15,7 +15,7 @@ namespace kang.AI
         {
 
         }
-
+        
         internal void SetStateMachineAndContext(StateMachine<T> stateMachine, T context)
         {
             this.stateMachine = stateMachine;

@@ -7,6 +7,10 @@ namespace kang.Characters
 {
     public class IdleState : State<EnemyController>
     {
+        public bool isPatrol = false;
+        private float minIdleTime = 0.0f;
+        private float maxIdleTime = 3.0f;
+        private float idleTime = 0.0f;
         private Animator animator;
         private CharacterController controller;
 
@@ -16,6 +20,8 @@ namespace kang.Characters
         {
             animator = context.GetComponent<Animator>();
             controller = context.GetComponent<CharacterController>();
+
+          
         }
 
         public override void OnEnter()
@@ -23,14 +29,19 @@ namespace kang.Characters
             animator?.SetBool(hasMove, false);
             animator?.SetFloat(hasMoveSpeed, 0);
             controller?.Move(Vector3.zero);
+
+            if (isPatrol)
+            {
+                idleTime = Random.Range(minIdleTime, maxIdleTime);
+            }
         }
         public override void Update(float deltaTime)
         {
             Transform enemy = context.SearchEnemy();
-            Debug.Log(enemy.name);
+            
             if(enemy)
             {
-                Debug.Log("dasdasd");
+                
                 if (context.IsAvailableAttack)
                 {
                     stateMachine.ChageState<AttackState>();
@@ -39,6 +50,11 @@ namespace kang.Characters
                 {
                     stateMachine.ChageState<MoveState>();
                 }
+            }
+            else if( isPatrol && stateMachine.ElapsedTimeInState > idleTime)
+            {
+               
+                stateMachine.ChageState<MoveToWayPoint>();
             }
 
         }
