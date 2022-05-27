@@ -1135,7 +1135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 43b52acba59722d48b0b9cf140f32775, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 43b52acba59722d48b0b9cf140f32775, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1990,8 +1990,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 1
+  m_Acceleration: 3
   avoidancePriority: 50
   m_AngularSpeed: 1000
   m_StoppingDistance: 1
@@ -2047,14 +2047,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950032338}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2016806685}
   - {fileID: 1983611599}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!191 &950032340
 OffMeshLink:
@@ -2150,8 +2150,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.3665164, y: 0.35128012, z: -0.15181552, w: 0.8480684}
-  m_LocalPosition: {x: -8.985517, y: 7.6343765, z: -0.9955351}
+  m_LocalRotation: {x: 0.4408899, y: 0.33629695, z: -0.18262258, w: 0.8118925}
+  m_LocalPosition: {x: -8.985534, y: 10.021511, z: 2.4744666}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2169,7 +2169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f1f79716f75e645a60a620f3de7fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  height: 5.3143764
+  height: 7.7015114
   distanse: 5
   angle: 45
   lookAtHeight: 0

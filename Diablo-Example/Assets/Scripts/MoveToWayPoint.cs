@@ -30,9 +30,9 @@ namespace kang.Characters
                 context.FindNextWayPoint();
                 
             }
-           Transform destination = context.FindNextWayPoint();
+           
 
-            if (destination)
+            if (context.targetWaypoint)
             {
                 agent?.SetDestination(context.targetWaypoint.position);
                 animator?.SetBool(hasMove, true);
@@ -62,6 +62,7 @@ namespace kang.Characters
 
                     
                     Transform nextDest = context.FindNextWayPoint();
+                    Debug.Log(nextDest);
                     
                     if (nextDest)
                     {
