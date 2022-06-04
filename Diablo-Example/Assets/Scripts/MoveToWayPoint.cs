@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using kang.AI;
+using kang.Characters;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace kang.Characters
+namespace kang.AI
 {
     public class MoveToWayPoint : State<EnemyController>
     {

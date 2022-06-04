@@ -148,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eb277bf3617e835429eb1ef318128d5f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.43
+      value: -4.47
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eb277bf3617e835429eb1ef318128d5f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -558,6 +558,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1827387034}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &225698165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 225698167}
+  - component: {fileID: 225698166}
+  m_Layer: 8
+  m_Name: MeleeAttackCollision
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &225698166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225698165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74580a7392a34ee4b9b893339c4b7a00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxSize: {x: 1, y: 1, z: 1}
+--- !u!4 &225698167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225698165}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.39, z: 0.63}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 880105334}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &227973347
 GameObject:
@@ -1945,6 +1989,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: eb277bf3617e835429eb1ef318128d5f, type: 3}
   m_PrefabInstance: {fileID: 115276363}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &880105334 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: eb277bf3617e835429eb1ef318128d5f, type: 3}
+  m_PrefabInstance: {fileID: 115276363}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &880105335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1962,6 +2011,15 @@ MonoBehaviour:
   - {fileID: 550906655}
   targetWaypoint: {fileID: 0}
   attackRange: 1.5
+  projectileTransform: {fileID: 0}
+  hitTransform: {fileID: 0}
+  attackBehaviours:
+  - {fileID: 880105339}
+  TargetMask:
+    serializedVersion: 2
+    m_Bits: 256
+  maxHealth: 100
+  health: 0
 --- !u!143 &880105336
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1991,7 +2049,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 1
-  m_Acceleration: 3
+  m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 1000
   m_StoppingDistance: 1
@@ -2023,6 +2081,42 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 576
   delay: 0.2
+--- !u!114 &880105339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880105332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30c2f11422c30b64e8b6ab393b1364ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delopmentDescription: 
+  animationIndex: 0
+  IsAvailable: 0
+  priority: 0
+  damage: 0
+  range: 3
+  coolTime: 0
+  effectPrefab: {fileID: 0}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 0
+  attackCollision: {fileID: 225698166}
+--- !u!114 &880105340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880105332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f895618c6379ec443a9b436977976c2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &950032338
 GameObject:
   m_ObjectHideFlags: 0

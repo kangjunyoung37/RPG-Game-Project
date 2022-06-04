@@ -1,10 +1,10 @@
 using System.Collections;
-using kang.AI;
+using kang.Characters;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace kang.Characters
+namespace kang.AI
 {
     public class MoveState : State<EnemyController>
     {

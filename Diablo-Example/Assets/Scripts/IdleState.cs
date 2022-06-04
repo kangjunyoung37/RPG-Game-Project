@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using kang.AI;
+using kang.Characters;
 using UnityEngine;
 
-namespace kang.Characters
+namespace kang.AI
 {
     public class IdleState : State<EnemyController>
     {
