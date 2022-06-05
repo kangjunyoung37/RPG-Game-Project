@@ -28,23 +28,32 @@ namespace kang.AI
 
         public override void Update(float deltaTime)
         {
-            Transform enemy = context.SearchEnemy();
-           
-            if (enemy)
+
+
+            if (context.Target)
             {
                 agent.SetDestination(context.Target.position);
-                if(agent.remainingDistance > agent.stoppingDistance)
+            }
+            controller.Move(agent.velocity * Time.deltaTime);
+            if (agent.remainingDistance > agent.stoppingDistance)
+            {
+                    
+                    animator.SetFloat(hasMoveSpeed, agent.velocity.magnitude / agent.speed, 0.1f, Time.deltaTime);
+                    
+             
+            }
+            else
+            {
+                if (!agent.pathPending)
                 {
-                    controller.Move(agent.velocity * deltaTime);
-                    animator.SetFloat(hasMoveSpeed, agent.velocity.magnitude / agent.speed, 1f, deltaTime);
-                    return;
+                    animator.SetFloat(hasMoveSpeed, 0);
+                    animator.SetBool(hasMove, false);
+                    agent.ResetPath();
+
+                    stateMachine.ChageState<IdleState>();
                 }
             }
-            
-            if (!enemy || agent.remainingDistance <= agent.stoppingDistance)
-            {
-                stateMachine.ChageState<IdleState>();
-            }
+
         }
 
         public override void OnExit()

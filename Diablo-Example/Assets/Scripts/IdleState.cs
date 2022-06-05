@@ -37,13 +37,14 @@ namespace kang.AI
         }
         public override void Update(float deltaTime)
         {
-            Transform enemy = context.SearchEnemy();
-            
-            if(enemy)
+
+
+            if (context.Target)
             {
                 
                 if (context.IsAvailableAttack)
                 {
+                    Debug.Log("°¡´ÉÇÔ");
                     stateMachine.ChageState<AttackState>();
                 }
                 else

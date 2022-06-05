@@ -60,7 +60,7 @@ ModelImporter:
       curves: []
       events:
       - time: 0.3346588
-        functionName: OnCheckAttackCollier(int)
+        functionName: OnCheckAttackCollier
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0

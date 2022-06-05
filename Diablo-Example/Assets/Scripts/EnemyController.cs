@@ -2,7 +2,7 @@ using kang.AI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
 
 namespace kang.Characters
 {
@@ -24,7 +24,8 @@ namespace kang.Characters
         public Transform targetWaypoint = null;
         private int waypoinIndex = 0;
 
-        public float attackRange;
+        
+        public virtual float attackRange => CurrentAttackBehaviour?.range ?? 6.0f;
 
         public Transform projectileTransform;
         public Transform hitTransform;
@@ -35,6 +36,7 @@ namespace kang.Characters
         public int maxHealth = 100;
         public int health;
 
+        NavMeshAgent agent;
         Animator animator;
         #endregion Variables
 
@@ -42,10 +44,8 @@ namespace kang.Characters
         private void Start()
         {
 
-            //stateMachine = new StateMachine<EnemyController>(this, new MoveToWayPoint());
-            //IdleState idleState = new IdleState();
-            //idleState.isPatrol = true;
-            health = maxHealth;
+
+            agent = GetComponent<NavMeshAgent>();
             stateMachine = new StateMachine<EnemyController>(this, new IdleState());
             stateMachine.AddState(new MoveState());
             stateMachine.AddState(new AttackState());
@@ -53,13 +53,20 @@ namespace kang.Characters
             InitAttackBehaviour();
             fov = GetComponent<FiledOfView>();
             animator = GetComponent<Animator>();
+            health = maxHealth;
         }
         private void Update()
         {
             CheckAttackBehaviour();
 
             stateMachine.Update(Time.deltaTime);
+            if(!(stateMachine.CurrentState is MoveState) && !(stateMachine.CurrentState is DeadState))
+            {
+                FaceTarget();
+            }
+            
         }
+
         #endregion Unity Methods
         #region Helper Methods
         private void InitAttackBehaviour()
@@ -108,11 +115,7 @@ namespace kang.Characters
                 return (distance <= attackRange);
             }
         }
-        public Transform SearchEnemy()
-        {
-            return Target;
 
-        }
         
 
        public Transform FindNextWayPoint()
@@ -126,6 +129,16 @@ namespace kang.Characters
             waypoinIndex = (waypoinIndex+1) % waypoints.Length;
             Debug.Log(waypoinIndex);
             return targetWaypoint;
+        }
+
+        public void FaceTarget()
+        {
+            if(Target)
+            {
+                Vector3 direction = (Target.position - transform.position).normalized;
+                Quaternion quaternion = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+                transform.rotation = Quaternion.Slerp(transform.rotation, quaternion, Time.deltaTime * 5f);
+            }
         }
         #endregion Other Methods
 

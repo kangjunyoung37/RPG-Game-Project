@@ -15,12 +15,14 @@ public abstract class AttackBehaviour : MonoBehaviour
 #endif
     public int animationIndex;
 
-    public bool IsAvailable = false;
+    
+    [SerializeField]
+    public bool IsAvailable => calcCoolTime >= coolTime;
 
     public int priority;
 
     public int damage;
-    public float range = 3f;
+    public float range = 1.5f;
 
     [SerializeField]
     protected float coolTime;
@@ -49,6 +51,7 @@ public abstract class AttackBehaviour : MonoBehaviour
         {
             calcCoolTime += Time.deltaTime;
         }
+     
     }
 
     public abstract void ExecuteAttack(GameObject target = null, Transform startPoint = null);

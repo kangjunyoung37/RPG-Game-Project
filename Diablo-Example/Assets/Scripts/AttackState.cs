@@ -21,11 +21,11 @@ namespace kang.AI {
         }
         public override void OnEnter()
         {
-            if(attackable == null || attackable.CurrentAttackBehaviour ==null)
-            
+            if(attackable == null || attackable.CurrentAttackBehaviour == null)          
             {
                 stateMachine.ChageState<IdleState>();
                 return;
+                
             }
             attackStateController.enterAttackStateHandler += OnEnterAttackState;
             attackStateController.enterAttackStateHandler += OnExitAttackState;
@@ -42,6 +42,12 @@ namespace kang.AI {
         public void OnExitAttackState()
         {
             stateMachine.ChageState<IdleState>();
+        }
+
+        public override void OnExit()
+        {
+            attackStateController.enterAttackStateHandler -= OnEnterAttackState;
+            attackStateController.enterAttackStateHandler -= OnExitAttackState;
         }
         public override void Update(float deltaTime)
         {
