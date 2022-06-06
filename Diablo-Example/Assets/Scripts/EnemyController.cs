@@ -58,12 +58,12 @@ namespace kang.Characters
         private void Update()
         {
             CheckAttackBehaviour();
-
-            stateMachine.Update(Time.deltaTime);
-            if(!(stateMachine.CurrentState is MoveState) && !(stateMachine.CurrentState is DeadState))
+            if (!(stateMachine.CurrentState is MoveState) && !(stateMachine.CurrentState is DeadState))
             {
                 FaceTarget();
             }
+            stateMachine.Update(Time.deltaTime);
+
             
         }
 
@@ -111,7 +111,8 @@ namespace kang.Characters
                     return false;
                 }
                 float distance = Vector3.Distance(transform.position, Target.position);
-                
+                bool result = distance <= attackRange;
+               
                 return (distance <= attackRange);
             }
         }
@@ -151,8 +152,10 @@ namespace kang.Characters
         }
         public void OnExecuteAttack(int attackIndex)
         {
-            if(CurrentAttackBehaviour != null && Target != null)
+ 
+            if (CurrentAttackBehaviour != null ) //&& Target != null)
             {
+               
                 CurrentAttackBehaviour.ExecuteAttack(Target.gameObject, projectileTransform);
             }
         }

@@ -44,7 +44,7 @@ public class ControllerCharacter : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, 100, groundLayerMask))
             {
-                Debug.Log("we hit" + hit.collider.name + " " + hit.point);
+               
 
                 agent.SetDestination(hit.point);
 

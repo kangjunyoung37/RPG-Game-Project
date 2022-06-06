@@ -44,7 +44,7 @@ namespace kang.AI
                 
                 if (context.IsAvailableAttack)
                 {
-                    Debug.Log("°¡´ÉÇÔ");
+                   
                     stateMachine.ChageState<AttackState>();
                 }
                 else

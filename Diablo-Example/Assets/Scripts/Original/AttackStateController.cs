@@ -44,6 +44,7 @@ public class AttackStateController : MonoBehaviour
     }
     public void OnCheckAttackCollier(int attackIndex)
     {
+    
         GetComponent<IAttackable>()?.OnExecuteAttack(attackIndex);
     }
     #endregion Helper Methods

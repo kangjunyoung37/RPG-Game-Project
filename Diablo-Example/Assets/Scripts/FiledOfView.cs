@@ -39,10 +39,7 @@ public class FiledOfView : MonoBehaviour
             FindVisibleTargets();
         }
     }
-    void Update()
-    {
-        FindVisibleTargets();
-    }
+
     void FindVisibleTargets()
     {
         distanceToTarget = 0.0f;
@@ -65,9 +62,10 @@ public class FiledOfView : MonoBehaviour
                     if(nearestTarget == null || (distanceToTarget > dstToTarget))
                     {
                         nearestTarget = target;
-                        distanceToTarget = dstToTarget;
+                        
 
                     }
+                    distanceToTarget = dstToTarget;
                 }
             }
         }
