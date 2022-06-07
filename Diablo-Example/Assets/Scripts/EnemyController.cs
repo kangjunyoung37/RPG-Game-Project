@@ -23,7 +23,7 @@ namespace kang.Characters
         [HideInInspector]
         public Transform targetWaypoint = null;
         private int waypoinIndex = 0;
-
+        
         
         public virtual float attackRange => CurrentAttackBehaviour?.range ?? 6.0f;
 
@@ -36,8 +36,9 @@ namespace kang.Characters
         public int maxHealth = 100;
         public int health;
 
-        NavMeshAgent agent;
-        Animator animator;
+        [SerializeField]
+        private NPCBattleUI battleUI;
+
         #endregion Variables
 
         #region Unity Methods
@@ -45,15 +46,22 @@ namespace kang.Characters
         {
 
 
-            agent = GetComponent<NavMeshAgent>();
+            
             stateMachine = new StateMachine<EnemyController>(this, new IdleState());
             stateMachine.AddState(new MoveState());
             stateMachine.AddState(new AttackState());
             stateMachine.AddState(new DeadState());
             InitAttackBehaviour();
             fov = GetComponent<FiledOfView>();
-            animator = GetComponent<Animator>();
+           
+            
             health = maxHealth;
+            if(battleUI)
+            {
+                battleUI.MinimumValue = 0.0f;
+                battleUI.MaximumValue = maxHealth;
+                battleUI.Value = health;
+            }
         }
         private void Update()
         {
@@ -153,7 +161,7 @@ namespace kang.Characters
         public void OnExecuteAttack(int attackIndex)
         {
  
-            if (CurrentAttackBehaviour != null ) //&& Target != null)
+            if (CurrentAttackBehaviour != null && Target != null)
             {
                
                 CurrentAttackBehaviour.ExecuteAttack(Target.gameObject, projectileTransform);
@@ -171,6 +179,12 @@ namespace kang.Characters
             }
             health -= damage;
 
+            if(battleUI)
+            {
+                
+                battleUI.Value = health;
+                battleUI.CreateDamageText(damage);
+            }
             if (hitEffectPrefabs)
             {
                 Instantiate(hitEffectPrefabs, hitTransform);
@@ -181,6 +195,10 @@ namespace kang.Characters
             }
             else
             {
+                if(battleUI != null)
+                {
+                    battleUI.enabled = false;
+                }
                 stateMachine.ChageState<DeadState>();
             }
         }
