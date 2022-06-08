@@ -11,6 +11,7 @@ public class AttackBehaviour_Melee : AttackBehaviour
         Collider[] colliders = attackCollision?.CheckoverlapBox(targetMask);
         foreach( Collider collider in colliders)
         {
+          
             collider.gameObject.GetComponent<IDamageable>()?.TakveDamage(damage, effectPrefab);
 
         }

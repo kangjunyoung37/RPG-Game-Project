@@ -31,17 +31,17 @@ public class ControllerCharacter : MonoBehaviour , IAttackable, IDamageable
 
 
     #endregion Variables
+
+    #region Unity Methods
     void Start()
     {
         characterController = GetComponent<CharacterController>();
         agent = GetComponent<NavMeshAgent>();
-        camera = Camera.main; 
+        camera = Camera.main;
         agent.updatePosition = false;//NavMeshAgent를 가지고 움직이지 않음
         agent.updateRotation = true;
-        health = maxHealth; 
+        health = maxHealth;
     }
-    #region Unity Methods
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(1))
@@ -52,7 +52,7 @@ public class ControllerCharacter : MonoBehaviour , IAttackable, IDamageable
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, 100, groundLayerMask))
             {
-  
+               
                 agent.SetDestination(hit.point);
                 if(picker)
                 {
@@ -64,9 +64,11 @@ public class ControllerCharacter : MonoBehaviour , IAttackable, IDamageable
 
         if(agent.remainingDistance > agent.stoppingDistance)
         {
-                characterController.Move(agent.velocity * Time.deltaTime);
-                animator.SetFloat(moveSpeed, agent.velocity.magnitude / agent.speed, 0.1f, Time.deltaTime);
-                animator.SetBool(moveHash , true);
+                
+            characterController.Move(agent.velocity * Time.deltaTime);
+                
+            animator.SetFloat(moveSpeed, agent.velocity.magnitude / agent.speed, 0.1f, Time.deltaTime);
+            animator.SetBool(moveHash , true);
         }
         else
         {
@@ -106,6 +108,7 @@ public class ControllerCharacter : MonoBehaviour , IAttackable, IDamageable
         }
     }
     #endregion IAttackable interfaces
+
     #region IDamamgeable interfaces
     public bool IsAlive => health > 0;
 
@@ -131,14 +134,14 @@ public class ControllerCharacter : MonoBehaviour , IAttackable, IDamageable
         {
             //animator?.SetTrigger(hitTriggerHash);
         }
-        else
-        {
-            //if (battleUI != null)
-            //{
-            //    battleUI.enabled = false;
-            //}
-            //stateMachine.ChageState<DeadState>();
-        }
+        //else
+        //{
+        //    if (battleUI != null)
+        //    {
+        //        battleUI.enabled = false;
+        //    }
+        //    stateMachine.ChageState<DeadState>();
+        //}
     }
 
 
