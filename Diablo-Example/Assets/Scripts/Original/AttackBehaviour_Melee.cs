@@ -8,6 +8,8 @@ public class AttackBehaviour_Melee : AttackBehaviour
 
     public override void ExecuteAttack(GameObject target = null, Transform startPoint = null)
     {
+        
+        Debug.Log("½Ã°£" + calcCoolTime + "ÄðÅ¸ÀÓ" + coolTime);
         Collider[] colliders = attackCollision?.CheckoverlapBox(targetMask);
         foreach( Collider collider in colliders)
         {
@@ -16,5 +18,6 @@ public class AttackBehaviour_Melee : AttackBehaviour
 
         }
         calcCoolTime = 0.0f;
+
     }
 }

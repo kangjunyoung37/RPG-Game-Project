@@ -7,13 +7,14 @@ public class AttackBehaviour_Projectile : AttackBehaviour
 {
     public override void ExecuteAttack(GameObject target = null, Transform startPoint = null)
     {
- 
-        if (target == null)
-        {
+        
+        Debug.Log("½Ã°£" + calcCoolTime + "ÄðÅ¸ÀÓ" + coolTime);
+        //if (target == null)
+        //{
             
-            return;
-        }
-     
+        //    return;
+        //}
+        
         Vector3 projectilePosition = startPoint?.position ?? transform.position;
         if(effectPrefab)
         {

@@ -8,6 +8,7 @@ namespace kang.AI {
     public class AttackState : State<EnemyController>
     {
         private Animator animator;
+        
         private AttackStateController attackStateController;
         private IAttackable attackable;
 
@@ -28,6 +29,7 @@ namespace kang.AI {
                 return;
                 
             }
+            
             attackStateController.enterAttackStateHandler += OnEnterAttackState;
             attackStateController.exitAttackStateHandler += OnExitAttackState;
 

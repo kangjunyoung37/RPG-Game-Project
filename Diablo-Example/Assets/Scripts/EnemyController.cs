@@ -100,6 +100,7 @@ namespace kang.Characters
                         if((CurrentAttackBehaviour == null || (CurrentAttackBehaviour.priority < behaviour.priority)))
                         {
                             CurrentAttackBehaviour = behaviour;
+                            return;
                         }
                     }
                 }

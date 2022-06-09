@@ -8,9 +8,10 @@ public class AttackStateMachineBehavior : StateMachineBehaviour
     {
         animator.gameObject.GetComponent<AttackStateController>()?.OnStartOfAttackState();
     }
-    public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    {
-        animator.gameObject.GetComponent<AttackStateController>()?.OnEndOfAttackState();
-    }
+    //public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    //{
+        
+    //    animator.gameObject.GetComponent<AttackStateController>()?.OnEndOfAttackState();
+    //}
 
 }
