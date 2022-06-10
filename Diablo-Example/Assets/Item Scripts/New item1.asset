@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: New item1
   m_EditorClassIdentifier: 
   type: 0
-  stackable: 0
+  stackable: 1
   icon: {fileID: 21300000, guid: 26ef65184462d4f49aca4bbf258ea91e, type: 3}
   modelPrefab: {fileID: 919132149155446097, guid: eb277bf3617e835429eb1ef318128d5f, type: 3}
   data:

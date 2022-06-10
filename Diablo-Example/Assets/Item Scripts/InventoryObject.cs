@@ -50,7 +50,11 @@ namespace kang.InventorySystem.Inventory
             InventorySlot slot =  FindItemInInventory(item);
             if (!database.itemObjects[item.id].stackable || slot == null)
             {
-                GetEmptySlot().AddItem(item, amount);
+                if(EmptySlotCount <=0)
+                {
+                    return false;
+                }
+                GetEmptySlot().UpdateSlot(item, amount);
             }
             else
             {

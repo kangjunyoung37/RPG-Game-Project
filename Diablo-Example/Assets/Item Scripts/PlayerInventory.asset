@@ -45,7 +45,23 @@ MonoBehaviour:
         id: -1
         name: 
         buffs: []
+      amount: 1
+    - allowedItems: 
+      item:
+        id: -1
+        name: 
+        buffs: []
       amount: 0
+    - allowedItems: 
+      item:
+        id: 1
+        name: afaa
+        buffs:
+        - state: 0
+          value: 1
+          min: 2
+          max: 31
+      amount: 1
     - allowedItems: 
       item:
         id: -1
@@ -87,19 +103,7 @@ MonoBehaviour:
         id: -1
         name: 
         buffs: []
-      amount: 0
-    - allowedItems: 
-      item:
-        id: -1
-        name: 
-        buffs: []
-      amount: 0
-    - allowedItems: 
-      item:
-        id: -1
-        name: 
-        buffs: []
-      amount: 0
+      amount: 1
     - allowedItems: 
       item:
         id: -1
