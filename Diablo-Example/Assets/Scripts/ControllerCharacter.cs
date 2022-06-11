@@ -3,10 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using kang.Characters;
+using UnityEngine.EventSystems;
+using kang.InventorySystem.Inventory;
+using kang.InventorySystem.Items;
 public class ControllerCharacter : MonoBehaviour , IAttackable, IDamageable
 {
 
     #region Variables
+
+    [SerializeField]
+    private InventoryObject equipment;
+
+    [SerializeField]
+    private InventoryObject inventory;
 
     private CharacterController characterController;
     private NavMeshAgent agent;
@@ -44,7 +53,14 @@ public class ControllerCharacter : MonoBehaviour , IAttackable, IDamageable
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(1))
+        if(!IsAlive)
+        {
+            return;
+
+        }
+
+        bool isOnUI = EventSystem.current.IsPointerOverGameObject();
+        if (!isOnUI && Input.GetMouseButtonDown(1))
         {
 
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
@@ -61,6 +77,23 @@ public class ControllerCharacter : MonoBehaviour , IAttackable, IDamageable
 
             }
         }
+        //else if((!isOnUI && Input.GetMouseButtonDown(0)))
+        //{
+        //    Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+
+        //    RaycastHit hit;
+        //    if (Physics.Raycast(ray, out hit, 100, groundLayerMask))
+        //    {
+        //        IInteractable interactable = hit.collider.GetComponent<IInteractable>();
+        //        if(interactable != null)
+        //        {
+                    
+        //        }
+
+
+        //    }
+        //}
+
 
         if(agent.remainingDistance > agent.stoppingDistance)
         {
@@ -146,4 +179,26 @@ public class ControllerCharacter : MonoBehaviour , IAttackable, IDamageable
 
 
     #endregion IDamamgeable interfaces
+
+    private void OnTriggerEnter(Collider other)
+    {
+        var item = other.GetComponent<GroundItem>();
+        if(item)
+        {
+            if(inventory.AddItem(new Item(item.itemObject),1))
+
+            {
+                Destroy(other.gameObject);
+            }
+        }
+    }
+    public bool PickupItem(PickupItem pickupItem, int amount = 1)
+    {
+        if(pickupItem.itemObject != null && inventory.AddItem(new Item(pickupItem.itemObject), amount))
+        {
+            Destroy(pickupItem.gameObject);
+            return true;
+        }
+        return false;
+    }
 }
