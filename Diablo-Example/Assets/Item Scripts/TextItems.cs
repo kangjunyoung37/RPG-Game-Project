@@ -11,7 +11,7 @@ public class TextItems : MonoBehaviour
    {
         if(Database.itemObjects.Length > 0)
         {
-            ItemObject newItemObject = Database.itemObjects[Random.Range(0, Database.itemObjects.Length - 1)];
+            ItemObject newItemObject = Database.itemObjects[2];
             Item newItem = new Item(newItemObject);
 
             inventoryObject.AddItem(newItem, 1);

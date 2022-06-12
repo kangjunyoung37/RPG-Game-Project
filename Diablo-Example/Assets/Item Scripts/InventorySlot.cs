@@ -37,6 +37,10 @@ public class InventorySlot
 
     public void UpdateSlot(Item item , int amount)
     {
+        if(amount <= 0)
+        {
+            item = new Item();
+        }
         OnPreUpdate?.Invoke(this);
 
         this.item = item;

@@ -2,6 +2,7 @@ using System.Collections;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using kang.Core;
 namespace kang.InventorySystem.Items
 {
 
@@ -11,11 +12,12 @@ public enum CharacterAttribute
     Agility,
     Intellect,
     Stamina,
-    Strength
+    Strength,
+    Health
 }
 [Serializable]
-public class ItemBuff
-{
+public class ItemBuff : IModifier
+    {
     public CharacterAttribute state;
     public int value;
     [SerializeField]

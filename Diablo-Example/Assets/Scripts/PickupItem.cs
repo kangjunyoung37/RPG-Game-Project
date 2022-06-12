@@ -2,7 +2,7 @@ using kang.InventorySystem.Items;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using kang.Characters;
 public class PickupItem : MonoBehaviour , IInteractable
 {
     public float distance = 3.0f;
@@ -17,7 +17,8 @@ public class PickupItem : MonoBehaviour , IInteractable
         {
             return false ;
         }
-        return other.GetComponent<CharacterController>()?.PickupItem(this) ?? false;
+        
+        return other.GetComponent<ControllerCharacter>()?.PickupItem(this) ?? false;
 
     }
 

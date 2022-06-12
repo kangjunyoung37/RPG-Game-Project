@@ -121,5 +121,29 @@ public abstract class InventoryUI : MonoBehaviour
         return dragImageGo; 
 
     }
+    public void OnClick(GameObject go, PointerEventData data)
+    {
+        InventorySlot slot = slotUIs[go];
+        if(slot == null)
+        {
+            return;
+        }
+        if(data.button == PointerEventData.InputButton.Left)
+        {
+            OnLeftClick(slot);
+        }
+        if (data.button == PointerEventData.InputButton.Right)
+        {
+            OnRightClick(slot);
+        }
+    }
+    protected virtual void OnRightClick(InventorySlot slot)
+    {
+
+    }
+    protected virtual void OnLeftClick(InventorySlot slot)
+    {
+
+    }
 
 }

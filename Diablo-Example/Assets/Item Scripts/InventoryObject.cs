@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using kang.InventorySystem.Items;
 using System.Linq;
+using System;
 namespace kang.InventorySystem.Inventory
 {
 
@@ -23,6 +24,7 @@ namespace kang.InventorySystem.Inventory
         [SerializeField]
         private Inventory container = new Inventory();
 
+        public Action<ItemObject> OnUseItem;
         public InventorySlot[] Slots => container.slots;
 
         public int EmptySlotCount
@@ -90,6 +92,17 @@ namespace kang.InventorySystem.Inventory
                 itemSlotA.UpdateSlot(tempSlot.item,tempSlot.amount);
 
             }
+        }
+        public void UseItem(InventorySlot slotToUse)
+        {
+            if(slotToUse.ItemObject == null || slotToUse.item.id < 0 || slotToUse.amount <0)
+            {
+                return;
+            }
+            ItemObject itemObject = slotToUse.ItemObject;
+            slotToUse.UpdateSlot(slotToUse.item, slotToUse.amount-1);
+
+            OnUseItem.Invoke(itemObject);
         }
     }
 

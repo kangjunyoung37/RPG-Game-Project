@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using kang.InventorySystem.Inventory;
 using UnityEngine.EventSystems;
-
+using kang.InventorySystem.Items;
 public class DynamicInventoryUI : InventoryUI
 {
     [SerializeField]
@@ -32,7 +32,7 @@ public class DynamicInventoryUI : InventoryUI
             AddEvent(go, EventTriggerType.BeginDrag, delegate { OnStartDrag(go); });
             AddEvent(go, EventTriggerType.EndDrag, delegate { OnEndDrag(go); });
             AddEvent(go, EventTriggerType.Drag, delegate { OnDrag(go); });
-
+            AddEvent(go, EventTriggerType.PointerClick, (data) => { OnClick(go, (PointerEventData)data); });
             inventoryObject.Slots[i].slotUI = go;
             slotUIs.Add(go, inventoryObject.Slots[i]);
 
@@ -47,6 +47,12 @@ public class DynamicInventoryUI : InventoryUI
         float y = start.y + (-(space.y + size.y) * (i / numberOfColum));
 
         return new Vector3(x, y, 0f);
+    }
+
+    protected override void OnRightClick(InventorySlot slot)
+    {
+        inventoryObject.UseItem(slot);
+
     }
 
 }
