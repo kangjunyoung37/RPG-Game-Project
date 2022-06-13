@@ -7,18 +7,11 @@ namespace kang.InventorySystem.Items
 {
 
 
-public enum CharacterAttribute
-{
-    Agility,
-    Intellect,
-    Stamina,
-    Strength,
-    Health
-}
+
 [Serializable]
 public class ItemBuff : IModifier
     {
-    public CharacterAttribute state;
+    public AttributeType state;
     public int value;
     [SerializeField]
     private int min;

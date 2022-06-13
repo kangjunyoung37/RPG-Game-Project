@@ -33,8 +33,6 @@ namespace kang.Characters
         public LayerMask groundLayerMask;
         public float groundCheckDistance = 0.3f;
     
-        public int maxHealth = 100;
-        public int health;
 
         [SerializeField]
         private Animator animator;
@@ -44,6 +42,8 @@ namespace kang.Characters
         public TargetPicker picker;
 
 
+        [SerializeField]
+        public StatsObject playerStats;
         #endregion Variables
 
         #region Unity Methods
@@ -55,7 +55,7 @@ namespace kang.Characters
             camera = Camera.main;
             agent.updatePosition = false;//NavMeshAgent를 가지고 움직이지 않음
             agent.updateRotation = true;
-            health = maxHealth;
+           
         }
         void Update()
         {
@@ -129,10 +129,10 @@ namespace kang.Characters
                         if(Target.GetComponent<IInteractable>() != null)
                         {
                             IInteractable interactable = Target.GetComponent<IInteractable>();
-                            if(interactable.Interact(this.gameObject))
-                            {
-                                RemoveTarget();
-                            }
+                            interactable.Interact(this.gameObject);
+                            Target = null;
+                                
+                            
                         }
 
                     }
@@ -167,7 +167,7 @@ namespace kang.Characters
         #endregion IAttackable interfaces
 
         #region IDamamgeable interfaces
-        public bool IsAlive => health > 0;
+        public bool IsAlive => playerStats.Health > 0;
 
         public void TakveDamage(int damage, GameObject hitEffectPrefabs)
         {
@@ -175,7 +175,7 @@ namespace kang.Characters
             {
                 return;
             }
-            health -= damage;
+            playerStats.AddHealth(-damage);
 
             //if (battleUI)
             //{
@@ -209,9 +209,10 @@ namespace kang.Characters
         {
             foreach(ItemBuff buff in itemObject.data.buffs)
             {
-                if(buff.state == CharacterAttribute.Health)
+                if(buff.state == AttributeType.Health)
                 {
-                    this.health += buff.value;
+                    playerStats.AddHealth(buff.value);
+                   
                 }
             }
         }

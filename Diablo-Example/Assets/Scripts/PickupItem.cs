@@ -10,15 +10,19 @@ public class PickupItem : MonoBehaviour , IInteractable
 
     public ItemObject itemObject;
 
-    public bool Interact(GameObject other)
+    public void Interact(GameObject other)
     {
         float calcDistance = Vector3.Distance(transform.position, other.transform.position);
         if(calcDistance > distance)
         {
-            return false ;
+            return;
+        }
+        ControllerCharacter controllerCharacter = other.GetComponent<ControllerCharacter>();
+        if(controllerCharacter?.PickupItem(this) ?? false)
+        {
+            Destroy(gameObject);
         }
         
-        return other.GetComponent<ControllerCharacter>()?.PickupItem(this) ?? false;
 
     }
 
