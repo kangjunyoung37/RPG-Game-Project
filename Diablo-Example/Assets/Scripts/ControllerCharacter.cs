@@ -169,7 +169,7 @@ namespace kang.Characters
         #region IDamamgeable interfaces
         public bool IsAlive => playerStats.Health > 0;
 
-        public void TakveDamage(int damage, GameObject hitEffectPrefabs)
+        public void TakeDamage(int damage, GameObject hitEffectPrefabs)
         {
             if (!IsAlive)
             {
@@ -186,6 +186,10 @@ namespace kang.Characters
             if (hitEffectPrefabs)
             {
                 Instantiate(hitEffectPrefabs, hitTransform);
+
+                hitEffectPrefabs.transform.LookAt(Camera.main.transform);
+
+                
             }
             if (IsAlive)
             {

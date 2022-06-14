@@ -10,7 +10,7 @@ namespace kang.Characters
         {
             get;
         }
-        void TakveDamage(int damage, GameObject hitEffectPrefabs);
+        void TakeDamage(int damage, GameObject hitEffectPrefabs);
 
     }
 }

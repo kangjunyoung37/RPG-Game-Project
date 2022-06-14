@@ -14,7 +14,7 @@ public class AttackBehaviour_Melee : AttackBehaviour
         foreach( Collider collider in colliders)
         {
           
-            collider.gameObject.GetComponent<IDamageable>()?.TakveDamage(damage, effectPrefab);
+            collider.gameObject.GetComponent<IDamageable>()?.TakeDamage(damage, effectPrefab);
 
         }
         calcCoolTime = 0.0f;

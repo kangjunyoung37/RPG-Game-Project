@@ -172,7 +172,7 @@ namespace kang.Characters
         #region IDamamgeable interfaces
         public bool IsAlive => health > 0;
 
-        public void TakveDamage(int damage, GameObject hitEffectPrefabs)
+        public void TakeDamage(int damage, GameObject hitEffectPrefabs)
         {
             if(!IsAlive)
             {
@@ -201,6 +201,7 @@ namespace kang.Characters
                     battleUI.enabled = false;
                 }
                 stateMachine.ChageState<DeadState>();
+                QuestManager.Instance.ProcessQuest(QuestType.DestroyEnemy, 0);
             }
         }
 

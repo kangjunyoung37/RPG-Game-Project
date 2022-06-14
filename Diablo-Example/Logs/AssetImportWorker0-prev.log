@@ -15,11 +15,11 @@ C:/Users/kangjunyoung/Documents/GitHub/Diablo-Example/Diablo-Example
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62395
+64565
 Successfully changed project path to: C:/Users/kangjunyoung/Documents/GitHub/Diablo-Example/Diablo-Example
 C:/Users/kangjunyoung/Documents/GitHub/Diablo-Example/Diablo-Example
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 34.90 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 32.90 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
 [Subsystems] Discovering subsystems at path D:/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
@@ -37,73 +37,73 @@ Initialize mono
 Mono path[0] = 'D:/2020.3.33f1/Editor/Data/Managed'
 Mono path[1] = 'D:/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56220
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56832
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000839 seconds.
+Registered in 0.000838 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 33.29 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 32.66 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.525 seconds
+- Completed reload, in  0.462 seconds
 Domain Reload Profiling:
-	ReloadAssembly (525ms)
+	ReloadAssembly (462ms)
 		BeginReloadAssembly (46ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (425ms)
-			LoadAssemblies (46ms)
+		EndReloadAssembly (362ms)
+			LoadAssemblies (45ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (162ms)
+			SetupTypeCache (105ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (147ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (145ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (33ms)
 				BeforeProcessingInitializeOnLoad (13ms)
-				ProcessInitializeOnLoadAttributes (72ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
+				ProcessInitializeOnLoadAttributes (71ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002416 seconds.
+Registered in 0.002432 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.879 seconds
+- Completed reload, in  0.794 seconds
 Domain Reload Profiling:
-	ReloadAssembly (880ms)
-		BeginReloadAssembly (116ms)
+	ReloadAssembly (795ms)
+		BeginReloadAssembly (121ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (719ms)
-			LoadAssemblies (71ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (629ms)
+			LoadAssemblies (72ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (198ms)
+			SetupTypeCache (195ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (341ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (256ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (143ms)
-				ProcessInitializeOnLoadAttributes (182ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (174ms)
 				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
@@ -115,14 +115,14 @@ Worker process is ready to serve import requests
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1632 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 89.4 MB.
-System memory in use after: 89.5 MB.
+Unloading 1646 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.8 MB.
+System memory in use after: 89.8 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2092.
-Total: 2.320300 ms (FindLiveObjects: 0.116600 ms CreateObjectMapping: 0.037400 ms MarkObjects: 2.090700 ms  DeleteObjects: 0.075100 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2106.
+Total: 2.231500 ms (FindLiveObjects: 0.095500 ms CreateObjectMapping: 0.037800 ms MarkObjects: 2.030100 ms  DeleteObjects: 0.067400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -136,42 +136,48 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Item Scripts/InventoryUI.cs
-  artifactKey: Guid(2ecfcfcaefa12364a947a3858f82d1b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Item Scripts/InventoryUI.cs using Guid(2ecfcfcaefa12364a947a3858f82d1b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2418ca10bb009df0e3cb619f27d2c31') in 0.059104 seconds 
+  path: Assets/Quest02.asset
+  artifactKey: Guid(e374f469346d3214bb949e08332a8905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quest02.asset using Guid(e374f469346d3214bb949e08332a8905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '003f6c89cd54cb79a6fcf94a8a7da6b4') in 0.039557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.236670 seconds.
+  path: Assets/Quest01.asset
+  artifactKey: Guid(d92138d7c8a72b54a977e3f3db9f4e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quest01.asset using Guid(d92138d7c8a72b54a977e3f3db9f4e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab31a09f5bdc4bf327a1b7a46cd537c9') in 0.006627 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002384 seconds.
+Registered in 0.002301 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.770 seconds
+- Completed reload, in  0.836 seconds
 Domain Reload Profiling:
-	ReloadAssembly (770ms)
-		BeginReloadAssembly (92ms)
+	ReloadAssembly (836ms)
+		BeginReloadAssembly (97ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (627ms)
-			LoadAssemblies (71ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (684ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (209ms)
+			SetupTypeCache (215ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (243ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (276ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (63ms)
-				ProcessInitializeOnLoadAttributes (166ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (189ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -179,14 +185,14 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1602 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.8 MB.
-System memory in use after: 87.0 MB.
+Unloading 1616 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.2 MB.
+System memory in use after: 87.3 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2095.
-Total: 2.367500 ms (FindLiveObjects: 0.134600 ms CreateObjectMapping: 0.043600 ms MarkObjects: 2.166700 ms  DeleteObjects: 0.022000 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2109.
+Total: 2.695200 ms (FindLiveObjects: 0.112100 ms CreateObjectMapping: 0.045900 ms MarkObjects: 2.512200 ms  DeleteObjects: 0.024300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -200,54 +206,54 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 303.319494 seconds.
-  path: Assets/Item Scripts/DynamicInventoryUI.cs
-  artifactKey: Guid(49cbcb272410b184fb83ee0ed20cde52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Item Scripts/DynamicInventoryUI.cs using Guid(49cbcb272410b184fb83ee0ed20cde52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7053d9df0870ad5eb94f164db76e42e0') in 0.009371 seconds 
+  Time since last request: 1462.773687 seconds.
+  path: Assets/Scripts/DoorController.cs
+  artifactKey: Guid(ec375add497ec1c4db80b7a2af6aac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DoorController.cs using Guid(ec375add497ec1c4db80b7a2af6aac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f63f23136900fcc1417fdd81f3c14b') in 0.032676 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 477.634423 seconds.
-  path: Assets/Item Scripts/DynamicInventoryUI.cs
-  artifactKey: Guid(49cbcb272410b184fb83ee0ed20cde52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Item Scripts/DynamicInventoryUI.cs using Guid(49cbcb272410b184fb83ee0ed20cde52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02a2fa9a2b6cdfda24e5da3459ab90be') in 0.002178 seconds 
+  Time since last request: 1702.751941 seconds.
+  path: Assets/Scripts/DoorController.cs
+  artifactKey: Guid(ec375add497ec1c4db80b7a2af6aac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DoorController.cs using Guid(ec375add497ec1c4db80b7a2af6aac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd15d1ea43cc6a48f6573642a9512ed7') in 0.002199 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 102.655692 seconds.
-  path: Assets/Item Scripts/DynamicInventoryUI.cs
-  artifactKey: Guid(49cbcb272410b184fb83ee0ed20cde52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Item Scripts/DynamicInventoryUI.cs using Guid(49cbcb272410b184fb83ee0ed20cde52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '740b455c4deb6bd8b8f5eb38240b65f2') in 0.003157 seconds 
+  Time since last request: 80.422753 seconds.
+  path: Assets/Scripts/DoorController.cs
+  artifactKey: Guid(ec375add497ec1c4db80b7a2af6aac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DoorController.cs using Guid(ec375add497ec1c4db80b7a2af6aac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a944f4da25949bfa35f8cdfdc4e0d2d') in 0.002173 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.054268 seconds.
+Registered in 0.002439 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.738 seconds
+- Completed reload, in  0.764 seconds
 Domain Reload Profiling:
-	ReloadAssembly (739ms)
-		BeginReloadAssembly (87ms)
+	ReloadAssembly (765ms)
+		BeginReloadAssembly (94ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (607ms)
-			LoadAssemblies (69ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (626ms)
+			LoadAssemblies (71ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (196ms)
+			SetupTypeCache (207ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
+			RebuildScriptCaches (37ms)
 			SetupLoadedEditorAssemblies (242ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
+				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (162ms)
+				ProcessInitializeOnLoadAttributes (164ms)
 				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
@@ -256,14 +262,14 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1602 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.9 MB.
-System memory in use after: 87.0 MB.
+Unloading 1617 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.3 MB.
+System memory in use after: 87.4 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2098.
-Total: 2.174600 ms (FindLiveObjects: 0.103800 ms CreateObjectMapping: 0.038900 ms MarkObjects: 2.015100 ms  DeleteObjects: 0.016200 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2113.
+Total: 2.249300 ms (FindLiveObjects: 0.128100 ms CreateObjectMapping: 0.038900 ms MarkObjects: 2.064300 ms  DeleteObjects: 0.017400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -277,64 +283,70 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.217913 seconds.
-  path: Assets/Item Scripts/New item1.asset
-  artifactKey: Guid(ce6aa256e6f1ee047bd76345bcab7700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Item Scripts/New item1.asset using Guid(ce6aa256e6f1ee047bd76345bcab7700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2356537b18f8bd5ce0e7cfcd9e626ef8') in 0.031232 seconds 
+  Time since last request: 16.154913 seconds.
+  path: Assets/Scripts/New Folder
+  artifactKey: Guid(ae506162ca863b247be500011634e59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/New Folder using Guid(ae506162ca863b247be500011634e59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cf208b54653bed86ccc60a0a1cc36a7') in 0.009004 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 27.580612 seconds.
-  path: Assets/Item Scripts/New Item.asset
-  artifactKey: Guid(7741d0624cac30a48908082f206d4280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Item Scripts/New Item.asset using Guid(7741d0624cac30a48908082f206d4280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '220ca59bcdcda499ed7f5f9d780f7b2f') in 0.007445 seconds 
+  Time since last request: 11.357096 seconds.
+  path: Assets/Scripts/DoorEventObject.cs
+  artifactKey: Guid(5a5f6688d3654b54d861a128857a5f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DoorEventObject.cs using Guid(5a5f6688d3654b54d861a128857a5f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '184bf872ff233b62c8537ceaa8f08721') in 0.008284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 140.636371 seconds.
+  path: Assets/Scripts/DoorEventObject.cs
+  artifactKey: Guid(5a5f6688d3654b54d861a128857a5f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DoorEventObject.cs using Guid(5a5f6688d3654b54d861a128857a5f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec93b5d94ed1319d757e5ac5f1d2158c') in 0.001855 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002765 seconds.
+Registered in 0.002483 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.831 seconds
+- Completed reload, in  0.759 seconds
 Domain Reload Profiling:
-	ReloadAssembly (832ms)
-		BeginReloadAssembly (95ms)
+	ReloadAssembly (759ms)
+		BeginReloadAssembly (91ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (687ms)
-			LoadAssemblies (77ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (620ms)
+			LoadAssemblies (72ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (236ms)
+			SetupTypeCache (201ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (258ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (243ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (66ms)
-				ProcessInitializeOnLoadAttributes (177ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (165ms)
 				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1602 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.9 MB.
-System memory in use after: 87.0 MB.
+Unloading 1618 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.3 MB.
+System memory in use after: 87.4 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2101.
-Total: 2.458400 ms (FindLiveObjects: 0.103800 ms CreateObjectMapping: 0.035700 ms MarkObjects: 2.301700 ms  DeleteObjects: 0.016300 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2117.
+Total: 2.331300 ms (FindLiveObjects: 0.134300 ms CreateObjectMapping: 0.046300 ms MarkObjects: 2.132500 ms  DeleteObjects: 0.017400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -348,48 +360,237 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 173.658099 seconds.
-  path: Assets/Item Scripts/StaticInventoryUI.cs
-  artifactKey: Guid(c5a30a0be95e7cc43aec0fee219c06d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Item Scripts/StaticInventoryUI.cs using Guid(c5a30a0be95e7cc43aec0fee219c06d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d9f06b2ca2a645d2cd210320beeaaa4') in 0.007522 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.814222 seconds.
-  path: Assets/Item Scripts/TextItems.cs
-  artifactKey: Guid(6f069d488282fd64784111f64b33a69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Item Scripts/TextItems.cs using Guid(6f069d488282fd64784111f64b33a69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25f92caa8365ddd2afc64ddf6b0dc01c') in 0.009945 seconds 
+  Time since last request: 55.339470 seconds.
+  path: Assets/Scripts/DoorTriggerArea.cs
+  artifactKey: Guid(d834f67bc047f9843ae843ad0646cde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DoorTriggerArea.cs using Guid(d834f67bc047f9843ae843ad0646cde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023d794b6429045df04100808bfef1d1') in 0.007902 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002262 seconds.
+Registered in 0.002221 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.734 seconds
+- Completed reload, in  0.795 seconds
 Domain Reload Profiling:
-	ReloadAssembly (734ms)
-		BeginReloadAssembly (87ms)
+	ReloadAssembly (795ms)
+		BeginReloadAssembly (83ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (602ms)
-			LoadAssemblies (69ms)
+		EndReloadAssembly (669ms)
+			LoadAssemblies (67ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (184ms)
+			SetupTypeCache (189ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (241ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (301ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (66ms)
-				ProcessInitializeOnLoadAttributes (161ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (181ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1619 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.3 MB.
+System memory in use after: 87.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2121.
+Total: 2.442600 ms (FindLiveObjects: 0.107900 ms CreateObjectMapping: 0.037800 ms MarkObjects: 2.278500 ms  DeleteObjects: 0.017800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 142.784535 seconds.
+  path: Assets/Scripts/DoorTriggerArea.cs
+  artifactKey: Guid(d834f67bc047f9843ae843ad0646cde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DoorTriggerArea.cs using Guid(d834f67bc047f9843ae843ad0646cde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '772dbc7041ce0fe7874934249d205723') in 0.004785 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002378 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.737 seconds
+Domain Reload Profiling:
+	ReloadAssembly (737ms)
+		BeginReloadAssembly (86ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (606ms)
+			LoadAssemblies (68ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (192ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (240ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (163ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1619 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.3 MB.
+System memory in use after: 87.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2124.
+Total: 2.173500 ms (FindLiveObjects: 0.104000 ms CreateObjectMapping: 0.036500 ms MarkObjects: 2.013300 ms  DeleteObjects: 0.018900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 62.696737 seconds.
+  path: Assets/Event System.asset
+  artifactKey: Guid(8091060e5b1c2374aa9b5ae3c86aa147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Event System.asset using Guid(8091060e5b1c2374aa9b5ae3c86aa147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07eb8629e9c6c9e6a6abfb96b48fef76') in 0.031665 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.068062 seconds.
+  path: Assets/Scripts/DoorEventObject.cs
+  artifactKey: Guid(5a5f6688d3654b54d861a128857a5f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DoorEventObject.cs using Guid(5a5f6688d3654b54d861a128857a5f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b177aa115b43a2ae8cd60967c7097246') in 0.002601 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002242 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.732 seconds
+Domain Reload Profiling:
+	ReloadAssembly (732ms)
+		BeginReloadAssembly (86ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (595ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (190ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (235ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (160ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1619 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 87.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2127.
+Total: 2.158800 ms (FindLiveObjects: 0.087600 ms CreateObjectMapping: 0.037500 ms MarkObjects: 2.017700 ms  DeleteObjects: 0.015400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002185 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.720 seconds
+Domain Reload Profiling:
+	ReloadAssembly (720ms)
+		BeginReloadAssembly (84ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (592ms)
+			LoadAssemblies (68ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (186ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (232ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (158ms)
 				ProcessInitializeOnLoadMethodAttributes (7ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
@@ -400,12 +601,12 @@ Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
 Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1602 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.9 MB.
-System memory in use after: 87.0 MB.
+Unloading 1619 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 87.5 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2104.
-Total: 2.417400 ms (FindLiveObjects: 0.116000 ms CreateObjectMapping: 0.043400 ms MarkObjects: 2.240100 ms  DeleteObjects: 0.017000 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2130.
+Total: 2.161600 ms (FindLiveObjects: 0.090600 ms CreateObjectMapping: 0.037600 ms MarkObjects: 2.016800 ms  DeleteObjects: 0.016000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -420,51 +621,51 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002470 seconds.
+Registered in 0.002192 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.744 seconds
+- Completed reload, in  0.719 seconds
 Domain Reload Profiling:
-	ReloadAssembly (745ms)
-		BeginReloadAssembly (89ms)
+	ReloadAssembly (719ms)
+		BeginReloadAssembly (84ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (609ms)
-			LoadAssemblies (70ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (592ms)
+			LoadAssemblies (66ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (187ms)
+			SetupTypeCache (189ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (248ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (235ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (62ms)
-				ProcessInitializeOnLoadAttributes (172ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (161ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1602 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.9 MB.
-System memory in use after: 87.0 MB.
+Unloading 1619 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 87.5 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2107.
-Total: 2.464900 ms (FindLiveObjects: 0.117800 ms CreateObjectMapping: 0.044600 ms MarkObjects: 2.283000 ms  DeleteObjects: 0.018700 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2133.
+Total: 2.289800 ms (FindLiveObjects: 0.105700 ms CreateObjectMapping: 0.042700 ms MarkObjects: 2.124400 ms  DeleteObjects: 0.016400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -479,51 +680,169 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002329 seconds.
+Registered in 0.002703 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.736 seconds
+- Completed reload, in  0.787 seconds
 Domain Reload Profiling:
-	ReloadAssembly (736ms)
+	ReloadAssembly (788ms)
 		BeginReloadAssembly (90ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (602ms)
-			LoadAssemblies (70ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (646ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (188ms)
+			SetupTypeCache (201ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (240ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (261ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (63ms)
-				ProcessInitializeOnLoadAttributes (162ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (179ms)
 				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1602 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.9 MB.
-System memory in use after: 87.1 MB.
+Unloading 1619 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 87.5 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2110.
-Total: 2.869300 ms (FindLiveObjects: 0.115300 ms CreateObjectMapping: 0.039300 ms MarkObjects: 2.694700 ms  DeleteObjects: 0.019300 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2136.
+Total: 2.300900 ms (FindLiveObjects: 0.117300 ms CreateObjectMapping: 0.045400 ms MarkObjects: 2.120200 ms  DeleteObjects: 0.017000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002159 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.713 seconds
+Domain Reload Profiling:
+	ReloadAssembly (713ms)
+		BeginReloadAssembly (89ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (581ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (185ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (230ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (157ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1619 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 87.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2139.
+Total: 2.291400 ms (FindLiveObjects: 0.095100 ms CreateObjectMapping: 0.038100 ms MarkObjects: 2.141400 ms  DeleteObjects: 0.016300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002301 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.732 seconds
+Domain Reload Profiling:
+	ReloadAssembly (732ms)
+		BeginReloadAssembly (88ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (599ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (190ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (236ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (161ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1619 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 87.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2142.
+Total: 2.418600 ms (FindLiveObjects: 0.202800 ms CreateObjectMapping: 0.040400 ms MarkObjects: 2.156400 ms  DeleteObjects: 0.018100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -537,33 +856,275 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 18407.746621 seconds.
-  path: Assets/Scripts/ModifiableInt.cs
-  artifactKey: Guid(20759189abfd1fd4fae923631333178b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ModifiableInt.cs using Guid(20759189abfd1fd4fae923631333178b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3369c35a7408ffeafb27944908807afa') in 0.009415 seconds 
+  Time since last request: 636.467700 seconds.
+  path: Assets/Scripts/TrapController.cs
+  artifactKey: Guid(0fb8e6e041089ac4f8a4be6b486d2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TrapController.cs using Guid(0fb8e6e041089ac4f8a4be6b486d2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db5de635b9d52216515c407e003ed6cf') in 0.009743 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002360 seconds.
+Registered in 0.002361 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.731 seconds
+- Completed reload, in  0.801 seconds
 Domain Reload Profiling:
-	ReloadAssembly (731ms)
-		BeginReloadAssembly (90ms)
+	ReloadAssembly (801ms)
+		BeginReloadAssembly (95ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (584ms)
+		EndReloadAssembly (654ms)
+			LoadAssemblies (77ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (195ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (282ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1620 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 87.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2146.
+Total: 2.307100 ms (FindLiveObjects: 0.121000 ms CreateObjectMapping: 0.045500 ms MarkObjects: 2.122700 ms  DeleteObjects: 0.017200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 315.293178 seconds.
+  path: Assets/Scripts/TrapController.cs
+  artifactKey: Guid(0fb8e6e041089ac4f8a4be6b486d2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TrapController.cs using Guid(0fb8e6e041089ac4f8a4be6b486d2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68a34f4933f6b2dafa64e58894db1f6c') in 0.005362 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002244 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.706 seconds
+Domain Reload Profiling:
+	ReloadAssembly (706ms)
+		BeginReloadAssembly (84ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (579ms)
 			LoadAssemblies (67ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (186ms)
+			SetupTypeCache (185ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (229ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (156ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1620 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 87.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2149.
+Total: 2.177600 ms (FindLiveObjects: 0.104600 ms CreateObjectMapping: 0.038800 ms MarkObjects: 2.018300 ms  DeleteObjects: 0.015400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002321 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.708 seconds
+Domain Reload Profiling:
+	ReloadAssembly (708ms)
+		BeginReloadAssembly (86ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (578ms)
+			LoadAssemblies (63ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (183ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (231ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (156ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1620 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 87.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2152.
+Total: 42.675600 ms (FindLiveObjects: 39.167400 ms CreateObjectMapping: 0.116700 ms MarkObjects: 3.362400 ms  DeleteObjects: 0.028300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002205 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.700 seconds
+Domain Reload Profiling:
+	ReloadAssembly (700ms)
+		BeginReloadAssembly (81ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (576ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (181ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (232ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (157ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1620 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 87.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2155.
+Total: 2.187800 ms (FindLiveObjects: 0.096800 ms CreateObjectMapping: 0.036700 ms MarkObjects: 2.038000 ms  DeleteObjects: 0.015700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002371 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.714 seconds
+Domain Reload Profiling:
+	ReloadAssembly (715ms)
+		BeginReloadAssembly (82ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (590ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (193ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (34ms)
 			SetupLoadedEditorAssemblies (231ms)
@@ -581,150 +1142,14 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1603 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.0 MB.
-System memory in use after: 87.1 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2114.
-Total: 2.285600 ms (FindLiveObjects: 0.100600 ms CreateObjectMapping: 0.043300 ms MarkObjects: 2.124600 ms  DeleteObjects: 0.016300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 260.246232 seconds.
-  path: Assets/Item Scripts/ItemBuff.cs
-  artifactKey: Guid(b7e60af8bd2d50648a1f5eafaae5082e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Item Scripts/ItemBuff.cs using Guid(b7e60af8bd2d50648a1f5eafaae5082e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f7d17a09f64bbe9b35b8ee370b0ba9b') in 0.007887 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 190.997521 seconds.
-  path: Assets/Item Scripts/IModifier.cs
-  artifactKey: Guid(7bf1a2f82508a0843a4299f1676de3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Item Scripts/IModifier.cs using Guid(7bf1a2f82508a0843a4299f1676de3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56cea5016540fad4b30bba1f9cff9492') in 0.006451 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 49.101526 seconds.
-  path: Assets/Item Scripts/IModifier.cs
-  artifactKey: Guid(7bf1a2f82508a0843a4299f1676de3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Item Scripts/IModifier.cs using Guid(7bf1a2f82508a0843a4299f1676de3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0d13403c7975acf970203216fbe3a4c') in 0.002253 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003654 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
-Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.839 seconds
-Domain Reload Profiling:
-	ReloadAssembly (839ms)
-		BeginReloadAssembly (103ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (689ms)
-			LoadAssemblies (79ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (209ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (100ms)
-			SetupLoadedEditorAssemblies (240ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (61ms)
-				ProcessInitializeOnLoadAttributes (164ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1604 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.0 MB.
-System memory in use after: 87.1 MB.
+Unloading 1620 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 87.5 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2118.
-Total: 2.434900 ms (FindLiveObjects: 0.096700 ms CreateObjectMapping: 0.035800 ms MarkObjects: 2.284300 ms  DeleteObjects: 0.017300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002625 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.812 seconds
-Domain Reload Profiling:
-	ReloadAssembly (812ms)
-		BeginReloadAssembly (91ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (675ms)
-			LoadAssemblies (70ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (203ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (302ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (61ms)
-				ProcessInitializeOnLoadAttributes (225ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1604 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.0 MB.
-System memory in use after: 87.1 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2121.
-Total: 2.867000 ms (FindLiveObjects: 0.195600 ms CreateObjectMapping: 0.062400 ms MarkObjects: 2.587200 ms  DeleteObjects: 0.020700 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2158.
+Total: 2.220800 ms (FindLiveObjects: 0.112500 ms CreateObjectMapping: 0.045900 ms MarkObjects: 2.044400 ms  DeleteObjects: 0.017000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 

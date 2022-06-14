@@ -62,6 +62,7 @@ namespace kang.InventorySystem.Inventory
             {
                 slot.AddAmount(amount);
             }
+            QuestManager.Instance.ProcessQuest(QuestType.AcquireItem, 1);
             return true;
 
         }

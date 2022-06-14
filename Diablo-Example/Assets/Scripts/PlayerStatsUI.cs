@@ -56,7 +56,7 @@ public class PlayerStatsUI : MonoBehaviour
             {
                 if (attribute.type == buff.state)
                 {
-                    attribute.value.AddModifier(buff);
+                    attribute.value.RemoveModifier(buff);
                 }
             }
         }

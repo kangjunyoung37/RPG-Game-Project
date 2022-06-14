@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class Quest : MonoBehaviour
+public enum QuestType
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    DestroyEnemy,
+    AcquireItem,
+}
+[Serializable]
+public class Quest 
+{
+    public int id;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public QuestType type;
+    public int targetID;
+    public int count;
+    public int completedCount;
+
+    public int rewardExp;
+    public int rewardGold;
+    public int rewardItemId;
+
+    public string title;
+    public string description;
 }

@@ -127,7 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   muzzlePrefabs: {fileID: 0}
-  hitPrefabs: {fileID: 0}
+  hitPrefabs: {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7, type: 3}
   shotSFX: {fileID: 0}
   hitSFX: {fileID: 0}
   attackBeHaviour: {fileID: 0}
