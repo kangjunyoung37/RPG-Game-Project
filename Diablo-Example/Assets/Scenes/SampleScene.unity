@@ -153,7 +153,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &69934899
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1935,6 +1935,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   groundCheckDistance: 0.3
+  attackBehaviours: []
   animator: {fileID: 450769911}
   picker: {fileID: 136579617}
   playerStats: {fileID: 11400000, guid: e0a55a8c6f81c614dbae808702fad2cf, type: 2}
@@ -9080,7 +9081,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1848167300
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10094,6 +10095,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   groundCheckDistance: 0.3
+  attackBehaviours: []
   animator: {fileID: 0}
   picker: {fileID: 0}
   playerStats: {fileID: 0}
@@ -10564,6 +10566,10 @@ PrefabInstance:
     - target: {fileID: 8079837943159769734, guid: f9f7cbcab9791a6438352f5aefc282db, type: 3}
       propertyPath: m_Name
       value: Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079837943159769734, guid: f9f7cbcab9791a6438352f5aefc282db, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8079837943159769737, guid: f9f7cbcab9791a6438352f5aefc282db, type: 3}
       propertyPath: m_Pivot.x

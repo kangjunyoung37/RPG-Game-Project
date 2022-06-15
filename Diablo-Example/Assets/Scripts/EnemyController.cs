@@ -81,7 +81,7 @@ namespace kang.Characters
         {
             foreach(AttackBehaviour behaviour in attackBehaviours)
             {
-                if(CurrentAttackBehaviour == null)
+                if (CurrentAttackBehaviour == null)
                 {
                     CurrentAttackBehaviour = behaviour;
                 }

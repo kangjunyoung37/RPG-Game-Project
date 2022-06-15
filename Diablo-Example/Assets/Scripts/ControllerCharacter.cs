@@ -32,13 +32,19 @@ namespace kang.Characters
 
         public LayerMask groundLayerMask;
         public float groundCheckDistance = 0.3f;
-    
+
+        [SerializeField]
+        private List<AttackBehaviour> attackBehaviours = new List<AttackBehaviour>();
+
+        public LayerMask TargetMask;
 
         [SerializeField]
         private Animator animator;
 
         readonly int moveHash = Animator.StringToHash("Move");
         readonly int moveSpeed = Animator.StringToHash("moveSpeed");
+        readonly int Attack = Animator.StringToHash("isAttack");
+        readonly int attackIndexHash = Animator.StringToHash("AttackIndex");
         public TargetPicker picker;
 
 
@@ -49,6 +55,7 @@ namespace kang.Characters
         #region Unity Methods
         void Start()
         {
+            InitAttackBehaviour();
             inventory.OnUseItem += OnUseItem;
             characterController = GetComponent<CharacterController>();
             agent = GetComponent<NavMeshAgent>();
@@ -66,7 +73,8 @@ namespace kang.Characters
             }
 
             bool isOnUI = EventSystem.current.IsPointerOverGameObject();
-            if (!isOnUI && Input.GetMouseButtonDown(1))
+
+            if (!isOnUI && Input.GetMouseButtonDown(0))
             {
 
                 Ray ray = camera.ScreenPointToRay(Input.mousePosition);
@@ -83,7 +91,7 @@ namespace kang.Characters
 
                 }
             }
-            else if ((!isOnUI && Input.GetMouseButtonDown(0)))
+            else if ((!isOnUI && Input.GetMouseButtonDown(1)))
             {
                 Ray ray = camera.ScreenPointToRay(Input.mousePosition);
 
@@ -91,6 +99,12 @@ namespace kang.Characters
                 if (Physics.Raycast(ray, out hit, 100))
                 {
                     IInteractable interactable = hit.collider.GetComponent<IInteractable>();
+                    IDamageable damageable = hit.collider.GetComponent<IDamageable>();
+                    if(damageable != null && damageable.IsAlive)
+                    {
+                        SetTarget(hit.collider.transform,CurrentAttackBehaviour?.range?? 1.5f);
+                       
+                    }
                     if (interactable != null)
                     {
 
@@ -131,8 +145,16 @@ namespace kang.Characters
                             IInteractable interactable = Target.GetComponent<IInteractable>();
                             interactable.Interact(this.gameObject);
                             Target = null;
-                                
+                            return;
                             
+                        }
+                        if (Target?.GetComponent<IDamageable>() != null)
+                        {
+                            animator.SetInteger(attackIndexHash, CurrentAttackBehaviour.animationIndex);
+                            animator.SetBool(Attack, true);
+                            
+                            
+
                         }
 
                     }
@@ -273,6 +295,20 @@ namespace kang.Characters
                 Quaternion LookQuaternion = Quaternion.LookRotation(new Vector3(Direction.x, 0, Direction.z));
                 transform.rotation = Quaternion.Slerp(transform.rotation, LookQuaternion, Time.deltaTime*10.0f);
 
+            }
+        }
+
+        private void InitAttackBehaviour()
+        {
+            foreach (AttackBehaviour behaviour in attackBehaviours)
+            {
+
+           
+                if (CurrentAttackBehaviour == null)
+                {
+                    CurrentAttackBehaviour = behaviour;
+                }
+                behaviour.targetMask = TargetMask;
             }
         }
         #endregion Help Method

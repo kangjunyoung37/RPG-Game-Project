@@ -15,11 +15,11 @@ C:/Users/kangjunyoung/Documents/GitHub/Diablo-Example/Diablo-Example
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64565
+50195
 Successfully changed project path to: C:/Users/kangjunyoung/Documents/GitHub/Diablo-Example/Diablo-Example
 C:/Users/kangjunyoung/Documents/GitHub/Diablo-Example/Diablo-Example
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 32.90 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 32.99 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
 [Subsystems] Discovering subsystems at path D:/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
@@ -37,37 +37,37 @@ Initialize mono
 Mono path[0] = 'D:/2020.3.33f1/Editor/Data/Managed'
 Mono path[1] = 'D:/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56832
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56808
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000838 seconds.
+Registered in 0.000916 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 32.66 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 34.41 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.462 seconds
+- Completed reload, in  0.491 seconds
 Domain Reload Profiling:
-	ReloadAssembly (462ms)
-		BeginReloadAssembly (46ms)
+	ReloadAssembly (491ms)
+		BeginReloadAssembly (55ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (362ms)
-			LoadAssemblies (45ms)
+		EndReloadAssembly (379ms)
+			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (105ms)
+			SetupTypeCache (111ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (145ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (150ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (33ms)
-				BeforeProcessingInitializeOnLoad (13ms)
-				ProcessInitializeOnLoadAttributes (71ms)
+				RefreshPlugins (34ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (74ms)
 				ProcessInitializeOnLoadMethodAttributes (23ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -75,35 +75,35 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002432 seconds.
+Registered in 0.003050 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.794 seconds
+- Completed reload, in  0.823 seconds
 Domain Reload Profiling:
-	ReloadAssembly (795ms)
-		BeginReloadAssembly (121ms)
+	ReloadAssembly (824ms)
+		BeginReloadAssembly (120ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (629ms)
-			LoadAssemblies (72ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (659ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (195ms)
+			SetupTypeCache (198ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (256ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (275ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (67ms)
-				ProcessInitializeOnLoadAttributes (174ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (191ms)
 				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
@@ -114,15 +114,15 @@ Platform modules already initialized, skipping
 Worker process is ready to serve import requests
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1646 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 89.8 MB.
-System memory in use after: 89.8 MB.
+Unloading 1651 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.9 MB.
+System memory in use after: 90.0 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2106.
-Total: 2.231500 ms (FindLiveObjects: 0.095500 ms CreateObjectMapping: 0.037800 ms MarkObjects: 2.030100 ms  DeleteObjects: 0.067400 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2112.
+Total: 2.327700 ms (FindLiveObjects: 0.098000 ms CreateObjectMapping: 0.038300 ms MarkObjects: 2.116700 ms  DeleteObjects: 0.074000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -136,47 +136,769 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Quest02.asset
-  artifactKey: Guid(e374f469346d3214bb949e08332a8905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Quest02.asset using Guid(e374f469346d3214bb949e08332a8905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '003f6c89cd54cb79a6fcf94a8a7da6b4') in 0.039557 seconds 
+  path: Assets/YBot/PlayerCharacter.controller
+  artifactKey: Guid(a4ea9b42baf24b04cb4f77c0286666a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YBot/PlayerCharacter.controller using Guid(a4ea9b42baf24b04cb4f77c0286666a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '785e9b4bb86da5167bdc6e31c956b48e') in 0.046151 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.236670 seconds.
-  path: Assets/Quest01.asset
-  artifactKey: Guid(d92138d7c8a72b54a977e3f3db9f4e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Quest01.asset using Guid(d92138d7c8a72b54a977e3f3db9f4e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab31a09f5bdc4bf327a1b7a46cd537c9') in 0.006627 seconds 
+  Time since last request: 39.408370 seconds.
+  path: Assets/Enemy/erika_archer_bow_arrow@Standing Aim Recoil.fbx
+  artifactKey: Guid(dd71327273c8dd04384bf1c16d9fc550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/erika_archer_bow_arrow@Standing Aim Recoil.fbx using Guid(dd71327273c8dd04384bf1c16d9fc550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ad918306dd1039b74d513e90d54050') in 0.252017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.080824 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong.fbx
+  artifactKey: Guid(b9b43b6453064254ea648f8d314c4f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong.fbx using Guid(b9b43b6453064254ea648f8d314c4f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c5dbbd627e5e16092d99d28b28313c3') in 0.035618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.289246 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Slash.fbx
+  artifactKey: Guid(eab0e9e9e3685a949836f623867becf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Slash.fbx using Guid(eab0e9e9e3685a949836f623867becf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceb439b4c15b3355344e040f0e55d95c') in 0.033489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.145442 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Slash.fbx
+  artifactKey: Guid(eab0e9e9e3685a949836f623867becf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Slash.fbx using Guid(eab0e9e9e3685a949836f623867becf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55504149d548887997c988b262b2d593') in 0.033228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 50.368586 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Slash.fbx
+  artifactKey: Guid(eab0e9e9e3685a949836f623867becf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Slash.fbx using Guid(eab0e9e9e3685a949836f623867becf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9686443472a6a5a154d17a2b38095584') in 0.034169 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002301 seconds.
+Registered in 0.002919 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.836 seconds
+- Completed reload, in  0.796 seconds
 Domain Reload Profiling:
-	ReloadAssembly (836ms)
-		BeginReloadAssembly (97ms)
+	ReloadAssembly (796ms)
+		BeginReloadAssembly (103ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (684ms)
-			LoadAssemblies (78ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (643ms)
+			LoadAssemblies (81ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (215ms)
+			SetupTypeCache (208ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (276ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (250ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (71ms)
-				ProcessInitializeOnLoadAttributes (189ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (170ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1621 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.4 MB.
+System memory in use after: 104.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2159.
+Total: 2.274500 ms (FindLiveObjects: 0.113900 ms CreateObjectMapping: 0.038900 ms MarkObjects: 2.103900 ms  DeleteObjects: 0.017100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 544.361767 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Slash.fbx
+  artifactKey: Guid(eab0e9e9e3685a949836f623867becf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Slash.fbx using Guid(eab0e9e9e3685a949836f623867becf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2608e2f71c0db5869fe911f434ec76c') in 0.105241 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003074 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.763 seconds
+Domain Reload Profiling:
+	ReloadAssembly (764ms)
+		BeginReloadAssembly (94ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (620ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (196ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (246ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (169ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1621 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.5 MB.
+System memory in use after: 104.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2163.
+Total: 2.196800 ms (FindLiveObjects: 0.103300 ms CreateObjectMapping: 0.037900 ms MarkObjects: 2.039200 ms  DeleteObjects: 0.015900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 275.607552 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Slash.fbx
+  artifactKey: Guid(eab0e9e9e3685a949836f623867becf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Slash.fbx using Guid(eab0e9e9e3685a949836f623867becf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d4819f0c91a3703175124b87bc54f7') in 0.098129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 80.182995 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle.fbx
+  artifactKey: Guid(a64364cb29fa1f344a2bef4d133ab77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle.fbx using Guid(a64364cb29fa1f344a2bef4d133ab77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe21098a46b48b6211aee2eba44e65c0') in 0.032435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 106.496576 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (2).fbx
+  artifactKey: Guid(598bc32f77642b6408c7498e40aa8d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (2).fbx using Guid(598bc32f77642b6408c7498e40aa8d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd0369d88a046a8d30d1d47fdb6c11fb') in 0.034622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.609506 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (2).fbx
+  artifactKey: Guid(598bc32f77642b6408c7498e40aa8d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (2).fbx using Guid(598bc32f77642b6408c7498e40aa8d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b8ddc0083561f8d49ebec61046ecc57') in 0.034645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 498.382399 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx
+  artifactKey: Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx using Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '218c236d3305ec7b71d38862f379ece9') in 0.031959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.526918 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle.fbx
+  artifactKey: Guid(a64364cb29fa1f344a2bef4d133ab77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle.fbx using Guid(a64364cb29fa1f344a2bef4d133ab77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f5f3699dfc4f09861b5fa72051e04a4') in 0.030708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.322995 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (2).fbx
+  artifactKey: Guid(598bc32f77642b6408c7498e40aa8d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (2).fbx using Guid(598bc32f77642b6408c7498e40aa8d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06ee70c5b553497875df11095faec7fd') in 0.031914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.146405 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (1).fbx
+  artifactKey: Guid(d0f40fa31131c224584836477c371887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (1).fbx using Guid(d0f40fa31131c224584836477c371887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60154a685c5e54a17165dcca264eb016') in 0.033638 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.945096 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong.fbx
+  artifactKey: Guid(b9b43b6453064254ea648f8d314c4f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong.fbx using Guid(b9b43b6453064254ea648f8d314c4f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf11a2f9460ec91a21bc82bb2f32c776') in 0.030842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.868077 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong.fbx
+  artifactKey: Guid(b9b43b6453064254ea648f8d314c4f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong.fbx using Guid(b9b43b6453064254ea648f8d314c4f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94394f4d5b300f4bd33bce6523c70d17') in 0.030408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 167.101582 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle.fbx
+  artifactKey: Guid(a64364cb29fa1f344a2bef4d133ab77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle.fbx using Guid(a64364cb29fa1f344a2bef4d133ab77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dbceabf590771523579ca5486681807') in 0.035934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 168.760427 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Slash.fbx
+  artifactKey: Guid(eab0e9e9e3685a949836f623867becf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Slash.fbx using Guid(eab0e9e9e3685a949836f623867becf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25da5b242ea716dfb1b1de9890a7bc8e') in 0.031224 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002805 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.757 seconds
+Domain Reload Profiling:
+	ReloadAssembly (757ms)
+		BeginReloadAssembly (94ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (616ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (195ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (246ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (170ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1621 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.6 MB.
+System memory in use after: 104.7 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2167.
+Total: 2.215100 ms (FindLiveObjects: 0.109900 ms CreateObjectMapping: 0.038300 ms MarkObjects: 2.047400 ms  DeleteObjects: 0.019000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 399.237645 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Drop Shadow.mat
+  artifactKey: Guid(749b9069dc4742c5bfa5c74644049926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Drop Shadow.mat using Guid(749b9069dc4742c5bfa5c74644049926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b9a6dbab25d6543dfee2789e8fae952') in 0.114690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
+  artifactKey: Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset using Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89f74535dbbe80d820aad8820167369b') in 0.241572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Outline.mat
+  artifactKey: Guid(f629c6e43dba4bf38cb74d8860150664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Outline.mat using Guid(f629c6e43dba4bf38cb74d8860150664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f18b71994742d88d97c1c2a21580d2d7') in 0.016465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat
+  artifactKey: Guid(6522f30e342599e4e9dd4cc2cc03c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat using Guid(6522f30e342599e4e9dd4cc2cc03c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ab2dc3a4077b37fe1bf25fc2e34219a') in 0.103802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset
+  artifactKey: Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset using Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ba1bb398137a00be6e06e68b72b365d') in 0.021450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Drop Shadow.mat
+  artifactKey: Guid(f2dcf029949142e28b974630369c8b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Drop Shadow.mat using Guid(f2dcf029949142e28b974630369c8b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0d5558f03e795f216f7f29785091b5c') in 0.014858 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Glow.mat
+  artifactKey: Guid(d75b8f41e959450c84ac6e967084d3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Glow.mat using Guid(d75b8f41e959450c84ac6e967084d3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0993877c1c0e22b53a69262c6ee2775') in 0.076790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Outline.mat
+  artifactKey: Guid(a00013af81304728b2be1f4309ee2433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Outline.mat using Guid(a00013af81304728b2be1f4309ee2433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2507f20aeeae8d98f86e4c2025440d37') in 0.013641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo.mat
+  artifactKey: Guid(f4e195ac1e204eff960149d1cb34e18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo.mat using Guid(f4e195ac1e204eff960149d1cb34e18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53a5ca144293083340976837f0521db0') in 0.240704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.031148 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Crate - Surface Shader Scene.mat
+  artifactKey: Guid(e6b9b44320f4448d9d5e0ee634259966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Crate - Surface Shader Scene.mat using Guid(e6b9b44320f4448d9d5e0ee634259966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82cf10a232fb1e9761a31632be84bc7c') in 0.162449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset
+  artifactKey: Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset using Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aecbacf0b5b681b775f225c866b98f6e') in 0.019429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.723412 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf
+  artifactKey: Guid(4beb055f07aaff244873dec698d0363e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf using Guid(4beb055f07aaff244873dec698d0363e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c0d3d5e9fbf8ba6903c17dcbf477454') in 0.042352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf
+  artifactKey: Guid(c9f6d0e7bc8541498c9a4799ba184ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf using Guid(c9f6d0e7bc8541498c9a4799ba184ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d313bcea6b6ddf2c8c0bdfd1fb81dfc') in 0.014678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF
+  artifactKey: Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF using Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9ac7beed70274322407e6f2201347ab') in 0.014086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Guards/HIE_Guard_01_TrailGlow_01.mat
+  artifactKey: Guid(af3fb1912f95b644c86ade02218eeb9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Guards/HIE_Guard_01_TrailGlow_01.mat using Guid(af3fb1912f95b644c86ade02218eeb9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3417e054932633a949ffdbac676c191e') in 0.014061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdddd331c3f1b7826858a8d92db67e39') in 0.012641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Surface Shader Scene.mat
+  artifactKey: Guid(aadd5a709a48466c887296bb5b1b8110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Surface Shader Scene.mat using Guid(aadd5a709a48466c887296bb5b1b8110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cb1a531bdeffaee745a9dd9c4f17fc2') in 0.020134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers.ttf
+  artifactKey: Guid(5dd49b3eacc540408c98eee0de38e0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers.ttf using Guid(5dd49b3eacc540408c98eee0de38e0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bcbddb7e72e92fa3a6f13b2b0717c42') in 0.011088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_01_Smoke_01.mat
+  artifactKey: Guid(9097f20ba94d8734b8177e657244b84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_01_Smoke_01.mat using Guid(9097f20ba94d8734b8177e657244b84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fe0ec4a2c686ab6fdf29eba82c62447') in 0.019032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Logo Scene.mat
+  artifactKey: Guid(c719e38f25a9480abd2480ab621a2949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Logo Scene.mat using Guid(c719e38f25a9480abd2480ab621a2949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4457526dabe3b1ee21207b5702e85636') in 0.016512 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf
+  artifactKey: Guid(997a43b767814dd0a7642ec9b78cba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf using Guid(997a43b767814dd0a7642ec9b78cba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a682bbb39787555d96ca66a99595bfc7') in 0.014796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.241420 seconds.
+  path: Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_02_HazeBlur_01.mat
+  artifactKey: Guid(1b53a3da271f62445a9b0409913ef0a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_02_HazeBlur_01.mat using Guid(1b53a3da271f62445a9b0409913ef0a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b825f1fe609384876f333e50aa397d05') in 0.010895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_02_TrailGlow_01.mat
+  artifactKey: Guid(f3543c936966481499b85c00ff68a1c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_02_TrailGlow_01.mat using Guid(f3543c936966481499b85c00ff68a1c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4231071e5de71fe500523e2ad1218bf') in 0.009808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_03_PointGlow_01.mat
+  artifactKey: Guid(f634288f1034a534fab9a6b8055d29c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_03_PointGlow_01.mat using Guid(f634288f1034a534fab9a6b8055d29c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d2a3cac13530647312b18a7f508757f') in 0.013624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_02_HazeGlow_01.mat
+  artifactKey: Guid(a5a44e238f4fc2145a7fe8241f41ad40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_02_HazeGlow_01.mat using Guid(a5a44e238f4fc2145a7fe8241f41ad40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df891e58e4d0e250a2461a90a5a16662') in 0.009624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.010235 seconds.
+  path: Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_03_Shockwave_2x2_01.mat
+  artifactKey: Guid(00c13c49894d46146b27ce3a995d98d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_03_Shockwave_2x2_01.mat using Guid(00c13c49894d46146b27ce3a995d98d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '649b7ceda8d1c383f51e933281c234b4') in 0.020453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Demo Scene/Materials/HitImpactEffects_Floor.mat
+  artifactKey: Guid(b0b4e880ae2ab6540b044e0c0252a003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Demo Scene/Materials/HitImpactEffects_Floor.mat using Guid(b0b4e880ae2ab6540b044e0c0252a003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '512fb42c2e537cdc8e5128e79a2ad40f') in 0.017834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_04_FlashRays_01.mat
+  artifactKey: Guid(0f9a2e6c560af1f42ace29002a4bbea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_04_FlashRays_01.mat using Guid(0f9a2e6c560af1f42ace29002a4bbea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a851da551a35221826fd274ff8c500a') in 0.019099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_04_Shockwave_01.mat
+  artifactKey: Guid(aa7a71e33a52d8c439dbe20272eed588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_04_Shockwave_01.mat using Guid(aa7a71e33a52d8c439dbe20272eed588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e42cba59f98d63a884e366985bdc5586') in 0.018424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_04_PointGlow_01.mat
+  artifactKey: Guid(c787c5412f5eec24fa01e0c3b2105ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalPakage/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_04_PointGlow_01.mat using Guid(c787c5412f5eec24fa01e0c3b2105ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52f1d01d626773648b5ceb14614e2013') in 0.013968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.142673 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca0d2861f60500f05bd29199894f7bb5') in 0.026811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '289988fcecf3b00d1602f8d2b589f7dd') in 0.026577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Overlay.mat
+  artifactKey: Guid(9ad269c99dcf42b7aedefd83dd5a7b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Overlay.mat using Guid(9ad269c99dcf42b7aedefd83dd5a7b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '530ab53d4647aa6af37f1765823d784d') in 0.027065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8c2210586957436df79bf961aeff06e') in 0.012939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '220f7843ff855124c80350a80dd38762') in 0.033321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Metalic Green.mat
+  artifactKey: Guid(8b29aaa3eec7468097ff07adfcf29ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Metalic Green.mat using Guid(8b29aaa3eec7468097ff07adfcf29ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1750271ec33564c9e991fc66a41ad3d0') in 0.117029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Soft Mask.mat
+  artifactKey: Guid(42df1c7856584b6b8db9a509b6b10074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Soft Mask.mat using Guid(42df1c7856584b6b8db9a509b6b10074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c07a3f0197d45ee33843239212d1c942') in 0.029257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.188272 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset
+  artifactKey: Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset using Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd214e28bdeb8e7d744101e38a9ef9c0f') in 0.016234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Drop Shadow.mat
+  artifactKey: Guid(b246c4190f4e46ec9352fe15a7b09ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Drop Shadow.mat using Guid(b246c4190f4e46ec9352fe15a7b09ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0193c990cebd7bcd9d6b31ea7739d38') in 0.016944 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/ExternalPakage/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Concrete.mat
+  artifactKey: Guid(72b5a49033211f040b217a4431c08896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalPakage/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Concrete.mat using Guid(72b5a49033211f040b217a4431c08896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8cf0d6fa870aeffbd3a3695a94efff3') in 0.017961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/ExternalPakage/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Generic Dirt.mat
+  artifactKey: Guid(d1cd8b9b3c7d785469e17f97b682c90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalPakage/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Generic Dirt.mat using Guid(d1cd8b9b3c7d785469e17f97b682c90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '538649e3f25deb7a13d860a8b9c21912') in 0.016773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/ExternalPakage/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Generic.mat
+  artifactKey: Guid(38f55d80fabc44846a1222921faa20bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalPakage/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Generic.mat using Guid(38f55d80fabc44846a1222921faa20bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba43b3fe3cc1cb08af7a336f494d227f') in 0.014281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/ExternalPakage/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Generic Sand.mat
+  artifactKey: Guid(bdd14d80d6f714d4ebc207bf6ad3164c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalPakage/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Generic Sand.mat using Guid(bdd14d80d6f714d4ebc207bf6ad3164c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97b893aa23445ff23c1e8b7b27a5e699') in 0.012987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/ExternalPakage/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Concrete Lighted.mat
+  artifactKey: Guid(510d824c243583b488605ed79cd5f7d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalPakage/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Concrete Lighted.mat using Guid(510d824c243583b488605ed79cd5f7d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e908c4750c1e569c04e2f9ddefed3b3c') in 0.020310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/ExternalPakage/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Metal.mat
+  artifactKey: Guid(042184d6004731842a52c613f8df564d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalPakage/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Metal.mat using Guid(042184d6004731842a52c613f8df564d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa70034daeb35ffdaa4c24fe7b5f9a1') in 0.016084 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset
+  artifactKey: Guid(5302535af1044152a457ed104f1f4b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset using Guid(5302535af1044152a457ed104f1f4b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfb93c09ad45f6e656fb1966a95741fa') in 0.012529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Surface.mat
+  artifactKey: Guid(e6b276ec991f467aa14ef1f3cc665993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Surface.mat using Guid(e6b276ec991f467aa14ef1f3cc665993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b473d3532bac8111072f2cb19e40b057') in 0.094222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Small Crate_diffuse.mat
+  artifactKey: Guid(22262639920f43d6be32430e4e58350d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Small Crate_diffuse.mat using Guid(22262639920f43d6be32430e4e58350d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f087dcf16cec75a6974325e7c470dd37') in 0.014109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 113.066291 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (2).fbx
+  artifactKey: Guid(598bc32f77642b6408c7498e40aa8d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (2).fbx using Guid(598bc32f77642b6408c7498e40aa8d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77daec46e9f4e764dda7d688000fbf21') in 0.050579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.184929 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (1).fbx
+  artifactKey: Guid(d0f40fa31131c224584836477c371887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (1).fbx using Guid(d0f40fa31131c224584836477c371887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '107e7bc6c7b9d7a58ce5399c0925c5c6') in 0.033642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.389185 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle.fbx
+  artifactKey: Guid(a64364cb29fa1f344a2bef4d133ab77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle.fbx using Guid(a64364cb29fa1f344a2bef4d133ab77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c215c804fe8830fb7c2faf965c8ca065') in 0.031635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.695813 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx
+  artifactKey: Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx using Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b72bd6e7aad3943142fdf6cc3d80805') in 0.029335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.762043 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Slash.fbx
+  artifactKey: Guid(eab0e9e9e3685a949836f623867becf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Slash.fbx using Guid(eab0e9e9e3685a949836f623867becf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0807cf9b2e5953e839986ecfa06e4cb1') in 0.032517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 367.222967 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (1).fbx
+  artifactKey: Guid(d0f40fa31131c224584836477c371887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (1).fbx using Guid(d0f40fa31131c224584836477c371887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7a81edb53228bd59f70355b3b343d45') in 0.032534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.208894 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (1).fbx
+  artifactKey: Guid(d0f40fa31131c224584836477c371887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (1).fbx using Guid(d0f40fa31131c224584836477c371887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '573a5cd37fb36dcc421a81a988308148') in 0.033116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58.310778 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (2).fbx
+  artifactKey: Guid(598bc32f77642b6408c7498e40aa8d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (2).fbx using Guid(598bc32f77642b6408c7498e40aa8d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f746682987cafd2e19a87dcfe6a177fe') in 0.030303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.988418 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle.fbx
+  artifactKey: Guid(a64364cb29fa1f344a2bef4d133ab77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle.fbx using Guid(a64364cb29fa1f344a2bef4d133ab77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f5e616f2168c04c3ceff7f146bd24ba') in 0.027991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.132444 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx
+  artifactKey: Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx using Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0173d6fff2e3bb97951de07d8d6cffef') in 0.028961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.604667 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Slash.fbx
+  artifactKey: Guid(eab0e9e9e3685a949836f623867becf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Slash.fbx using Guid(eab0e9e9e3685a949836f623867becf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6acebec3d837cf1985e722fd22515dfc') in 0.027747 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002872 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.811 seconds
+Domain Reload Profiling:
+	ReloadAssembly (811ms)
+		BeginReloadAssembly (103ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (656ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (209ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (260ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (176ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1621 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.0 MB.
+System memory in use after: 105.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2175.
+Total: 2.385700 ms (FindLiveObjects: 0.117400 ms CreateObjectMapping: 0.039500 ms MarkObjects: 2.210500 ms  DeleteObjects: 0.017600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 247.497220 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (1).fbx
+  artifactKey: Guid(d0f40fa31131c224584836477c371887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (1).fbx using Guid(d0f40fa31131c224584836477c371887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cab4c5190cf5a5c782ab6508d0e318f7') in 0.134066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 85.984262 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (1).fbx
+  artifactKey: Guid(d0f40fa31131c224584836477c371887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (1).fbx using Guid(d0f40fa31131c224584836477c371887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceb5d433554c9a501e5ade1811800e8a') in 0.058490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 73.429758 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle.fbx
+  artifactKey: Guid(a64364cb29fa1f344a2bef4d133ab77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle.fbx using Guid(a64364cb29fa1f344a2bef4d133ab77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '358c136e77775cb71ba7a1c3ad9ae795') in 0.029149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.203034 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle.fbx
+  artifactKey: Guid(a64364cb29fa1f344a2bef4d133ab77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle.fbx using Guid(a64364cb29fa1f344a2bef4d133ab77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08cd90ad9ca803ef091d06ca659c662') in 0.028330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 59.710977 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (1).fbx
+  artifactKey: Guid(d0f40fa31131c224584836477c371887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (1).fbx using Guid(d0f40fa31131c224584836477c371887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '370ff9f731802f3a1a6bd4af25776532') in 0.033146 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002989 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.762 seconds
+Domain Reload Profiling:
+	ReloadAssembly (763ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (616ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (196ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (241ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (164ms)
 				ProcessInitializeOnLoadMethodAttributes (9ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
@@ -185,14 +907,14 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1616 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.2 MB.
-System memory in use after: 87.3 MB.
+Unloading 1621 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.0 MB.
+System memory in use after: 105.1 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2109.
-Total: 2.695200 ms (FindLiveObjects: 0.112100 ms CreateObjectMapping: 0.045900 ms MarkObjects: 2.512200 ms  DeleteObjects: 0.024300 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2179.
+Total: 2.219200 ms (FindLiveObjects: 0.100000 ms CreateObjectMapping: 0.038800 ms MarkObjects: 2.063100 ms  DeleteObjects: 0.016600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -205,148 +927,53 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 1462.773687 seconds.
-  path: Assets/Scripts/DoorController.cs
-  artifactKey: Guid(ec375add497ec1c4db80b7a2af6aac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/DoorController.cs using Guid(ec375add497ec1c4db80b7a2af6aac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f63f23136900fcc1417fdd81f3c14b') in 0.032676 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1702.751941 seconds.
-  path: Assets/Scripts/DoorController.cs
-  artifactKey: Guid(ec375add497ec1c4db80b7a2af6aac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/DoorController.cs using Guid(ec375add497ec1c4db80b7a2af6aac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd15d1ea43cc6a48f6573642a9512ed7') in 0.002199 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 80.422753 seconds.
-  path: Assets/Scripts/DoorController.cs
-  artifactKey: Guid(ec375add497ec1c4db80b7a2af6aac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/DoorController.cs using Guid(ec375add497ec1c4db80b7a2af6aac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a944f4da25949bfa35f8cdfdc4e0d2d') in 0.002173 seconds 
-========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002439 seconds.
+Registered in 0.002957 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.764 seconds
+- Completed reload, in  0.745 seconds
 Domain Reload Profiling:
-	ReloadAssembly (765ms)
+	ReloadAssembly (745ms)
 		BeginReloadAssembly (94ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (626ms)
-			LoadAssemblies (71ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (606ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (207ms)
+			SetupTypeCache (195ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (242ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (164ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1617 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.3 MB.
-System memory in use after: 87.4 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2113.
-Total: 2.249300 ms (FindLiveObjects: 0.128100 ms CreateObjectMapping: 0.038900 ms MarkObjects: 2.064300 ms  DeleteObjects: 0.017400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 16.154913 seconds.
-  path: Assets/Scripts/New Folder
-  artifactKey: Guid(ae506162ca863b247be500011634e59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/New Folder using Guid(ae506162ca863b247be500011634e59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cf208b54653bed86ccc60a0a1cc36a7') in 0.009004 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.357096 seconds.
-  path: Assets/Scripts/DoorEventObject.cs
-  artifactKey: Guid(5a5f6688d3654b54d861a128857a5f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/DoorEventObject.cs using Guid(5a5f6688d3654b54d861a128857a5f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '184bf872ff233b62c8537ceaa8f08721') in 0.008284 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 140.636371 seconds.
-  path: Assets/Scripts/DoorEventObject.cs
-  artifactKey: Guid(5a5f6688d3654b54d861a128857a5f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/DoorEventObject.cs using Guid(5a5f6688d3654b54d861a128857a5f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec93b5d94ed1319d757e5ac5f1d2158c') in 0.001855 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002483 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.759 seconds
-Domain Reload Profiling:
-	ReloadAssembly (759ms)
-		BeginReloadAssembly (91ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (620ms)
-			LoadAssemblies (72ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (201ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (243ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (240ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (63ms)
+				BeforeProcessingInitializeOnLoad (61ms)
 				ProcessInitializeOnLoadAttributes (165ms)
 				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1618 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.3 MB.
-System memory in use after: 87.4 MB.
+Unloading 1621 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.0 MB.
+System memory in use after: 105.1 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2117.
-Total: 2.331300 ms (FindLiveObjects: 0.134300 ms CreateObjectMapping: 0.046300 ms MarkObjects: 2.132500 ms  DeleteObjects: 0.017400 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2182.
+Total: 2.195100 ms (FindLiveObjects: 0.100100 ms CreateObjectMapping: 0.039200 ms MarkObjects: 2.039700 ms  DeleteObjects: 0.015500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -360,58 +987,82 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 55.339470 seconds.
-  path: Assets/Scripts/DoorTriggerArea.cs
-  artifactKey: Guid(d834f67bc047f9843ae843ad0646cde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/DoorTriggerArea.cs using Guid(d834f67bc047f9843ae843ad0646cde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023d794b6429045df04100808bfef1d1') in 0.007902 seconds 
+  Time since last request: 109.710585 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (1).fbx
+  artifactKey: Guid(d0f40fa31131c224584836477c371887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (1).fbx using Guid(d0f40fa31131c224584836477c371887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6d690a5f0ff3abb2b1d881308cf4b52') in 0.094127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.929344 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (2).fbx
+  artifactKey: Guid(598bc32f77642b6408c7498e40aa8d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle (2).fbx using Guid(598bc32f77642b6408c7498e40aa8d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f9222bcc92b244ba55f8a47f41bf019') in 0.033218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.401545 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle.fbx
+  artifactKey: Guid(a64364cb29fa1f344a2bef4d133ab77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Idle.fbx using Guid(a64364cb29fa1f344a2bef4d133ab77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18f3f8f4063645ceeaba41e9fc874a0c') in 0.028128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.971159 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx
+  artifactKey: Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx using Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48f1fd0b4b070f418a2087bf2d55660b') in 0.030022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.564213 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Slash.fbx
+  artifactKey: Guid(eab0e9e9e3685a949836f623867becf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Slash.fbx using Guid(eab0e9e9e3685a949836f623867becf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '822e536c18007b4ddeaa042e0a4626d1') in 0.029769 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002221 seconds.
+Registered in 0.002820 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.795 seconds
+- Completed reload, in  0.732 seconds
 Domain Reload Profiling:
-	ReloadAssembly (795ms)
-		BeginReloadAssembly (83ms)
+	ReloadAssembly (732ms)
+		BeginReloadAssembly (91ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (669ms)
-			LoadAssemblies (67ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (595ms)
+			LoadAssemblies (75ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (189ms)
+			SetupTypeCache (183ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (301ms)
+			SetupLoadedEditorAssemblies (240ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (181ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (164ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
 Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1619 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.3 MB.
-System memory in use after: 87.5 MB.
+Unloading 1621 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.2 MB.
+System memory in use after: 105.3 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2121.
-Total: 2.442600 ms (FindLiveObjects: 0.107900 ms CreateObjectMapping: 0.037800 ms MarkObjects: 2.278500 ms  DeleteObjects: 0.017800 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2186.
+Total: 2.212100 ms (FindLiveObjects: 0.098700 ms CreateObjectMapping: 0.038500 ms MarkObjects: 2.058000 ms  DeleteObjects: 0.016200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -424,15 +1075,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 142.784535 seconds.
-  path: Assets/Scripts/DoorTriggerArea.cs
-  artifactKey: Guid(d834f67bc047f9843ae843ad0646cde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/DoorTriggerArea.cs using Guid(d834f67bc047f9843ae843ad0646cde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '772dbc7041ce0fe7874934249d205723') in 0.004785 seconds 
-========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002378 seconds.
+Registered in 0.002835 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
@@ -442,407 +1087,41 @@ Mono: successfully reloaded assembly
 - Completed reload, in  0.737 seconds
 Domain Reload Profiling:
 	ReloadAssembly (737ms)
-		BeginReloadAssembly (86ms)
+		BeginReloadAssembly (92ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (606ms)
-			LoadAssemblies (68ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (600ms)
+			LoadAssemblies (75ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (192ms)
+			SetupTypeCache (188ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (240ms)
+			SetupLoadedEditorAssemblies (241ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (62ms)
-				ProcessInitializeOnLoadAttributes (163ms)
+				ProcessInitializeOnLoadAttributes (165ms)
 				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1619 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.3 MB.
-System memory in use after: 87.5 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2124.
-Total: 2.173500 ms (FindLiveObjects: 0.104000 ms CreateObjectMapping: 0.036500 ms MarkObjects: 2.013300 ms  DeleteObjects: 0.018900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 62.696737 seconds.
-  path: Assets/Event System.asset
-  artifactKey: Guid(8091060e5b1c2374aa9b5ae3c86aa147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Event System.asset using Guid(8091060e5b1c2374aa9b5ae3c86aa147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07eb8629e9c6c9e6a6abfb96b48fef76') in 0.031665 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.068062 seconds.
-  path: Assets/Scripts/DoorEventObject.cs
-  artifactKey: Guid(5a5f6688d3654b54d861a128857a5f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/DoorEventObject.cs using Guid(5a5f6688d3654b54d861a128857a5f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b177aa115b43a2ae8cd60967c7097246') in 0.002601 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002242 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.732 seconds
-Domain Reload Profiling:
-	ReloadAssembly (732ms)
-		BeginReloadAssembly (86ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (595ms)
-			LoadAssemblies (71ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (190ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (235ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (61ms)
-				ProcessInitializeOnLoadAttributes (160ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1619 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.4 MB.
-System memory in use after: 87.5 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2127.
-Total: 2.158800 ms (FindLiveObjects: 0.087600 ms CreateObjectMapping: 0.037500 ms MarkObjects: 2.017700 ms  DeleteObjects: 0.015400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002185 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.720 seconds
-Domain Reload Profiling:
-	ReloadAssembly (720ms)
-		BeginReloadAssembly (84ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (592ms)
-			LoadAssemblies (68ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (186ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (232ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (60ms)
-				ProcessInitializeOnLoadAttributes (158ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1619 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.4 MB.
-System memory in use after: 87.5 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2130.
-Total: 2.161600 ms (FindLiveObjects: 0.090600 ms CreateObjectMapping: 0.037600 ms MarkObjects: 2.016800 ms  DeleteObjects: 0.016000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002192 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.719 seconds
-Domain Reload Profiling:
-	ReloadAssembly (719ms)
-		BeginReloadAssembly (84ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (592ms)
-			LoadAssemblies (66ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (189ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (235ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (60ms)
-				ProcessInitializeOnLoadAttributes (161ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1619 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.4 MB.
-System memory in use after: 87.5 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2133.
-Total: 2.289800 ms (FindLiveObjects: 0.105700 ms CreateObjectMapping: 0.042700 ms MarkObjects: 2.124400 ms  DeleteObjects: 0.016400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002703 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.787 seconds
-Domain Reload Profiling:
-	ReloadAssembly (788ms)
-		BeginReloadAssembly (90ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (646ms)
-			LoadAssemblies (73ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (201ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (261ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (66ms)
-				ProcessInitializeOnLoadAttributes (179ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1619 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.4 MB.
-System memory in use after: 87.5 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2136.
-Total: 2.300900 ms (FindLiveObjects: 0.117300 ms CreateObjectMapping: 0.045400 ms MarkObjects: 2.120200 ms  DeleteObjects: 0.017000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002159 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.713 seconds
-Domain Reload Profiling:
-	ReloadAssembly (713ms)
-		BeginReloadAssembly (89ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (581ms)
-			LoadAssemblies (73ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (185ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (230ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (59ms)
-				ProcessInitializeOnLoadAttributes (157ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1619 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.4 MB.
-System memory in use after: 87.5 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2139.
-Total: 2.291400 ms (FindLiveObjects: 0.095100 ms CreateObjectMapping: 0.038100 ms MarkObjects: 2.141400 ms  DeleteObjects: 0.016300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002301 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.732 seconds
-Domain Reload Profiling:
-	ReloadAssembly (732ms)
-		BeginReloadAssembly (88ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (599ms)
-			LoadAssemblies (72ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (190ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (236ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (62ms)
-				ProcessInitializeOnLoadAttributes (161ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
 Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1619 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.4 MB.
-System memory in use after: 87.5 MB.
+Unloading 1621 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.2 MB.
+System memory in use after: 105.3 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2142.
-Total: 2.418600 ms (FindLiveObjects: 0.202800 ms CreateObjectMapping: 0.040400 ms MarkObjects: 2.156400 ms  DeleteObjects: 0.018100 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2189.
+Total: 2.197400 ms (FindLiveObjects: 0.099700 ms CreateObjectMapping: 0.038500 ms MarkObjects: 2.041800 ms  DeleteObjects: 0.016700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -856,42 +1135,172 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 636.467700 seconds.
-  path: Assets/Scripts/TrapController.cs
-  artifactKey: Guid(0fb8e6e041089ac4f8a4be6b486d2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/TrapController.cs using Guid(0fb8e6e041089ac4f8a4be6b486d2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db5de635b9d52216515c407e003ed6cf') in 0.009743 seconds 
+  Time since last request: 220.860340 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx
+  artifactKey: Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx using Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e1d09f4d5cd97143e1603e30e36fc0') in 0.088086 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002361 seconds.
+Registered in 0.003171 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.801 seconds
+- Completed reload, in  0.747 seconds
 Domain Reload Profiling:
-	ReloadAssembly (801ms)
-		BeginReloadAssembly (95ms)
+	ReloadAssembly (747ms)
+		BeginReloadAssembly (91ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (654ms)
-			LoadAssemblies (77ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (612ms)
+			LoadAssemblies (76ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (195ms)
+			SetupTypeCache (194ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (282ms)
+			SetupLoadedEditorAssemblies (242ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (63ms)
-				ProcessInitializeOnLoadAttributes (203ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (162ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1621 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.2 MB.
+System memory in use after: 105.3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2193.
+Total: 2.392300 ms (FindLiveObjects: 0.112100 ms CreateObjectMapping: 0.039300 ms MarkObjects: 2.222600 ms  DeleteObjects: 0.017700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 131.282906 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx
+  artifactKey: Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx using Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a81680c4a3e74625b47c54b980f3931a') in 0.088961 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003168 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.740 seconds
+Domain Reload Profiling:
+	ReloadAssembly (740ms)
+		BeginReloadAssembly (91ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (605ms)
+			LoadAssemblies (77ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (185ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (245ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (169ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1621 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.2 MB.
+System memory in use after: 105.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2197.
+Total: 2.293500 ms (FindLiveObjects: 0.112600 ms CreateObjectMapping: 0.045900 ms MarkObjects: 2.117100 ms  DeleteObjects: 0.017100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 40.642676 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx
+  artifactKey: Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx using Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c318c4c9b092bca09271e6a5edc469d8') in 0.087344 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003044 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.761 seconds
+Domain Reload Profiling:
+	ReloadAssembly (761ms)
+		BeginReloadAssembly (100ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (614ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (193ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (244ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (165ms)
 				ProcessInitializeOnLoadMethodAttributes (10ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
@@ -900,14 +1309,73 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1620 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.4 MB.
-System memory in use after: 87.5 MB.
+Unloading 1621 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.3 MB.
+System memory in use after: 105.4 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2146.
-Total: 2.307100 ms (FindLiveObjects: 0.121000 ms CreateObjectMapping: 0.045500 ms MarkObjects: 2.122700 ms  DeleteObjects: 0.017200 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2201.
+Total: 2.237800 ms (FindLiveObjects: 0.107400 ms CreateObjectMapping: 0.045100 ms MarkObjects: 2.068600 ms  DeleteObjects: 0.016100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003340 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.784 seconds
+Domain Reload Profiling:
+	ReloadAssembly (785ms)
+		BeginReloadAssembly (95ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (642ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (198ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (257ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (175ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1621 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.3 MB.
+System memory in use after: 105.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2204.
+Total: 2.422100 ms (FindLiveObjects: 0.117100 ms CreateObjectMapping: 0.041400 ms MarkObjects: 2.245400 ms  DeleteObjects: 0.017600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -921,117 +1389,82 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 315.293178 seconds.
-  path: Assets/Scripts/TrapController.cs
-  artifactKey: Guid(0fb8e6e041089ac4f8a4be6b486d2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/TrapController.cs using Guid(0fb8e6e041089ac4f8a4be6b486d2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68a34f4933f6b2dafa64e58894db1f6c') in 0.005362 seconds 
+  Time since last request: 612.448345 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx
+  artifactKey: Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx using Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27ee64cd9ab74877723e1f75149eed4d') in 0.095899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 71.961619 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx
+  artifactKey: Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx using Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65269824755e5f95c9ee2779902744fa') in 0.028841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.056024 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx
+  artifactKey: Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx using Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ffd0f3c924e28347c4314b33855cd75') in 0.032744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.988652 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx
+  artifactKey: Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx using Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c9a243e4a403b4a496c355432e6ca30') in 0.031532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.282226 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx
+  artifactKey: Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx using Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87208cb919c8922eedebb3f6787ce940') in 0.028348 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002244 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.706 seconds
-Domain Reload Profiling:
-	ReloadAssembly (706ms)
-		BeginReloadAssembly (84ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (579ms)
-			LoadAssemblies (67ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (185ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (229ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (59ms)
-				ProcessInitializeOnLoadAttributes (156ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1620 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.4 MB.
-System memory in use after: 87.5 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2149.
-Total: 2.177600 ms (FindLiveObjects: 0.104600 ms CreateObjectMapping: 0.038800 ms MarkObjects: 2.018300 ms  DeleteObjects: 0.015400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002321 seconds.
+Registered in 0.003033 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.708 seconds
+- Completed reload, in  0.849 seconds
 Domain Reload Profiling:
-	ReloadAssembly (708ms)
-		BeginReloadAssembly (86ms)
+	ReloadAssembly (850ms)
+		BeginReloadAssembly (104ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (578ms)
-			LoadAssemblies (63ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (694ms)
+			LoadAssemblies (85ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (183ms)
+			SetupTypeCache (215ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (231ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (285ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (60ms)
-				ProcessInitializeOnLoadAttributes (156ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (194ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1620 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.4 MB.
-System memory in use after: 87.5 MB.
+Unloading 1621 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.3 MB.
+System memory in use after: 105.4 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2152.
-Total: 42.675600 ms (FindLiveObjects: 39.167400 ms CreateObjectMapping: 0.116700 ms MarkObjects: 3.362400 ms  DeleteObjects: 0.028300 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2208.
+Total: 2.717000 ms (FindLiveObjects: 0.123500 ms CreateObjectMapping: 0.038900 ms MarkObjects: 2.536500 ms  DeleteObjects: 0.017400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1044,121 +1477,8 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002205 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.700 seconds
-Domain Reload Profiling:
-	ReloadAssembly (700ms)
-		BeginReloadAssembly (81ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (576ms)
-			LoadAssemblies (64ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (181ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (232ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (60ms)
-				ProcessInitializeOnLoadAttributes (157ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1620 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.4 MB.
-System memory in use after: 87.5 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2155.
-Total: 2.187800 ms (FindLiveObjects: 0.096800 ms CreateObjectMapping: 0.036700 ms MarkObjects: 2.038000 ms  DeleteObjects: 0.015700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002371 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\kangjunyoung\Documents\GitHub\Diablo-Example\Diablo-Example\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.714 seconds
-Domain Reload Profiling:
-	ReloadAssembly (715ms)
-		BeginReloadAssembly (82ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (590ms)
-			LoadAssemblies (66ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (193ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (231ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (60ms)
-				ProcessInitializeOnLoadAttributes (157ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1620 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.4 MB.
-System memory in use after: 87.5 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2158.
-Total: 2.220800 ms (FindLiveObjects: 0.112500 ms CreateObjectMapping: 0.045900 ms MarkObjects: 2.044400 ms  DeleteObjects: 0.017000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+Received Import Request.
+  Time since last request: 1556.905570 seconds.
+  path: Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx
+  artifactKey: Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerCharacterModel/Maria WProp J J Ong@Great Sword Run.fbx using Guid(4bd6cc861dad75e4a9e2d8e0fa04e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8851d1840d1d37b5c93f540f10cc2b6') in 0.146615 seconds 
