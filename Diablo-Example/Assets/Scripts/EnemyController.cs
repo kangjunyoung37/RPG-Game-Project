@@ -23,7 +23,8 @@ namespace kang.Characters
         [HideInInspector]
         public Transform targetWaypoint = null;
         private int waypoinIndex = 0;
-        
+
+        public GameObject Bow;
         
         public virtual float attackRange => CurrentAttackBehaviour?.range ?? 6.0f;
 
@@ -150,6 +151,16 @@ namespace kang.Characters
                 transform.rotation = Quaternion.Slerp(transform.rotation, quaternion, Time.deltaTime * 5f);
             }
         }
+        public void EquipBow()
+        {
+            Bow.SetActive(true);
+        }
+        
+        public void DisengagementBow()
+        {
+            Bow.SetActive(false);
+        }
+
         #endregion Other Methods
 
         #region IAttackable interfaces
@@ -180,16 +191,18 @@ namespace kang.Characters
             }
             health -= damage;
 
-            if(battleUI)
+            if (hitEffectPrefabs)
+            {
+                Instantiate(hitEffectPrefabs, hitTransform);
+                hitEffectPrefabs.transform.LookAt(Camera.main.transform);
+            }
+            if (battleUI)
             {
                 
                 battleUI.Value = health;
                 battleUI.CreateDamageText(damage);
             }
-            if (hitEffectPrefabs)
-            {
-                Instantiate(hitEffectPrefabs, hitTransform);
-            }
+
             if(IsAlive)
             {
                 //animator?.SetTrigger(hitTriggerHash);

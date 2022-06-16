@@ -20,7 +20,7 @@ public class DialogueNPC : MonoBehaviour , IInteractable
     public void Interact(GameObject other)
     {
         float calcDistance = Vector3.Distance(transform.position, other.transform.position);
-        if(calcDistance <distance)
+        if(calcDistance -0.5f> distance)
         {
             return;
         }

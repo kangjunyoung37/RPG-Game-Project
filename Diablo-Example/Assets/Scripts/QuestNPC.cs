@@ -23,7 +23,7 @@ public class QuestNPC : MonoBehaviour , IInteractable
     public void Interact(GameObject other)
     {
         float calcDistance = Vector3.Distance(transform.position, other.transform.position);
-        if (calcDistance < distance)
+        if (calcDistance > distance)
         {
             return;
         }

@@ -76,7 +76,7 @@ namespace kang.Characters
 
             if (!isOnUI && Input.GetMouseButtonDown(0))
             {
-
+                
                 Ray ray = camera.ScreenPointToRay(Input.mousePosition);
 
                 RaycastHit hit;
@@ -98,9 +98,15 @@ namespace kang.Characters
                 RaycastHit hit;
                 if (Physics.Raycast(ray, out hit, 100))
                 {
+                    
                     IInteractable interactable = hit.collider.GetComponent<IInteractable>();
                     IDamageable damageable = hit.collider.GetComponent<IDamageable>();
-                    if(damageable != null && damageable.IsAlive)
+                    
+                    if(hit.collider.GetComponent<ControllerCharacter>()!=null)
+                    {
+                        return;
+                    }
+                    if(damageable != null && damageable.IsAlive )
                     {
                         SetTarget(hit.collider.transform,CurrentAttackBehaviour?.range?? 1.5f);
                        
@@ -116,48 +122,79 @@ namespace kang.Characters
             }
             if(Target != null)
             {
-                agent.SetDestination(Target.position);
-                FaceToTarget();
+                if (Target.GetComponent<IInteractable>() != null)
+                {
+                    float calcDistance = Vector3.Distance(Target.position, transform.position);
+                    float range = Target.GetComponent<IInteractable>().Distance;
+                    if (calcDistance > range)
+                    {
+                        SetTarget(Target, range);
+                    }
+
+                    FaceToTarget();
+                }
+                else if (!(Target.GetComponent<IDamageable>()?.IsAlive ?? false))
+                {
+                    RemoveTarget();
+                }
+                else
+                {
+                    float calcDistance = Vector3.Distance(Target.position, transform.position);
+                    float range = CurrentAttackBehaviour?.range ?? 1.5f;
+                    if (calcDistance > range)
+                    {
+                        SetTarget(Target, range);
+                    }
+
+                    FaceToTarget();
+                }
             }
 
 
-            if (agent.remainingDistance > agent.stoppingDistance)
+            if (agent.pathPending || agent.remainingDistance > agent.stoppingDistance)
             {
                 
                 characterController.Move(agent.velocity * Time.deltaTime);
-                
+
+                animator.SetBool(Attack, false);
                 animator.SetFloat(moveSpeed, agent.velocity.magnitude / agent.speed, 0.1f, Time.deltaTime);
                 animator.SetBool(moveHash , true);
+                
             }
             else
             {
-                    characterController.Move(agent.velocity * Time.deltaTime);
-                    if(!agent.pathPending)
-                    {
+                characterController.Move(agent.velocity * Time.deltaTime);
+                if(!agent.pathPending)
+                {
                         animator.SetFloat(moveSpeed, 0);
                         animator.SetBool(moveHash, false);
                         agent.ResetPath();
-                    }
-                    if(Target!= null)
+                }
+                if(Target!= null)
+                {
+                    if(Target.GetComponent<IInteractable>() != null)
                     {
-                        if(Target.GetComponent<IInteractable>() != null)
-                        {
-                            IInteractable interactable = Target.GetComponent<IInteractable>();
-                            interactable.Interact(this.gameObject);
-                            Target = null;
-                            return;
-                            
-                        }
-                        if (Target?.GetComponent<IDamageable>() != null)
+                        IInteractable interactable = Target.GetComponent<IInteractable>();
+                        interactable.Interact(this.gameObject);
+                        Target = null;
+                        
+                          
+                    }
+                    if (Target?.GetComponent<IDamageable>() != null )
+                    {
+                        if(IsAvailableAttack)
                         {
                             animator.SetInteger(attackIndexHash, CurrentAttackBehaviour.animationIndex);
                             animator.SetBool(Attack, true);
-                            
-                            
-
                         }
+                        
+                      
+                            
+                            
 
                     }
+
+                }
 
                 
             }
@@ -309,6 +346,18 @@ namespace kang.Characters
                     CurrentAttackBehaviour = behaviour;
                 }
                 behaviour.targetMask = TargetMask;
+            }
+        }
+        public bool IsAvailableAttack
+        {
+            get
+            {
+                if (!Target)
+                {
+                    return false;
+                }
+                float distance = Vector3.Distance(transform.position, Target.position);
+                return distance <= CurrentAttackBehaviour.range;
             }
         }
         #endregion Help Method
