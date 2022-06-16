@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "690776296347",
+    "project_id": "kangexample-1a531",
+    "storage_bucket": "kangexample-1a531.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690776296347:android:b3afbdebfa7c722b01ef3e",
+        "android_client_info": {
+          "package_name": "com.kangExample.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690776296347-vbf3cn2iut1nq8ne3oagso47poecdtog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCME9rbIo4wigKnJemIYYQvrHi_u-wa-po"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690776296347-vbf3cn2iut1nq8ne3oagso47poecdtog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
