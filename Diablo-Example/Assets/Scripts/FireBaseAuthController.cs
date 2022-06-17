@@ -50,7 +50,7 @@ public class FireBaseAuthController
                 Debug.LogError("CreateUserWithEmailAndPasswordAsync was cancled.");
                 return;
             }
-            if(task.IsFaulted)
+            if(task.IsFaulted)//아이디를 만들 때 실패했을 경우 오류 내용 찾기
             {
                 Debug.LogError("CreateUserWithAndPasswordAsync encountered an error: " + task.Exception);
 
@@ -75,7 +75,7 @@ public class FireBaseAuthController
             Debug.LogFormat("Firebase user Created successfully: {0} ({1})", newUser.DisplayName, newUser.UserId);
         });
     }
-    public void SingIn(string email, string password)
+    public void SingIn(string email, string password)// 로그인 했을 때 
     {
         auth.SignInWithEmailAndPasswordAsync(email, password).ContinueWith(task => {
             if (task.IsCanceled)
@@ -83,7 +83,7 @@ public class FireBaseAuthController
                 Debug.LogError("SignInWithEmailAndPasswordAsync was cancled.");
                 return;
             }
-            if (task.IsFaulted)
+            if (task.IsFaulted)// 실패했을경우 오류내용 찾기
             {
                 Debug.LogError("SignInWithEmailAndPasswordAsync encountered an error: " + task.Exception);
 
@@ -112,8 +112,11 @@ public class FireBaseAuthController
     {
         auth.SignOut();
     }
-    private int GetFirebaseErrorCode(AggregateException exception)
+    AggregateException aggregateException = null;
+    private int GetFirebaseErrorCode(AggregateException exception)//에러코드 알아내기 위해 사용 
     {
+
+
         FirebaseException firebaseException = null;
         foreach(Exception e in exception.Flatten().InnerExceptions)
         {
@@ -125,7 +128,7 @@ public class FireBaseAuthController
         }
         return firebaseException?.ErrorCode ?? 0;
     }
-    private void OnAuthStateChanged(object sender, EventArgs eventArgs)
+    private void OnAuthStateChanged(object sender, EventArgs eventArgs)//로그인이나 로그아웃했을 때 실행하는 함수
     {
         if(auth.CurrentUser  != user)
         {
