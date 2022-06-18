@@ -25,6 +25,14 @@ public class UserScore
         this.timestamp = timestamp;
         this.otherData = otherData;
     }
+    public string ShortDateString
+    {
+        get
+        {
+            var scoreData = new DateTimeOffset(new DateTime(timestamp * TimeSpan.TicksPerSecond, DateTimeKind.Utc)).LocalDateTime;
+            return scoreData.ToShortDateString() + " " + scoreData.ToShortTimeString();
+        }
+    }
     public UserScore(DataSnapshot record)
     {
         userId = record.Child(userIdPath).Value.ToString();

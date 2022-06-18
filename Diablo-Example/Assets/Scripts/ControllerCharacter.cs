@@ -6,6 +6,7 @@ using kang.Characters;
 using UnityEngine.EventSystems;
 using kang.InventorySystem.Inventory;
 using kang.InventorySystem.Items;
+using System;
 
 namespace kang.Characters
 {
@@ -15,7 +16,6 @@ namespace kang.Characters
     {
 
         #region Variables
-
         [SerializeField]
         private InventoryObject equipment;
 
