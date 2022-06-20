@@ -8,6 +8,8 @@ using Firebase.Unity.Editor;
 using System.Threading.Tasks;
 using System.Linq;
 using TMPro;
+using Firebase.Storage;
+
 namespace kang.firebase.Leaderboard
 {
 
@@ -62,6 +64,8 @@ namespace kang.firebase.Leaderboard
 
         public UDateTime startDateTime;
         public UDateTime endDateTime;
+
+        private Query currentNewScoreQuery;
 
         public long StartTime
         {
@@ -166,7 +170,8 @@ namespace kang.firebase.Leaderboard
 
             return Task.Run(() =>
             {
-                var newEntry = databaseRef.Child(AllScoreDataPath).Push();
+
+                var newEntry = databaseRef.Child(AllScoreDataPath).Child(userScore.userId);
                 return newEntry.SetValueAsync(scoreDictionary).ContinueWith(task =>
                 {
                     if(task.Exception != null)
@@ -190,14 +195,16 @@ namespace kang.firebase.Leaderboard
                 }).Result;
             });
         }
-
+        
         private bool gettingUserScore = false;
         public void GetUserScore(string userId)
         {
             gettingUserScore = true;
+            
             databaseRef.Child(AllScoreDataPath).OrderByChild(UserScore.userIdPath).StartAt(userId).EndAt(userId).GetValueAsync().ContinueWith(task =>
             {
-                if(task.Exception != null)
+               
+                if (task.Exception != null)
                 {
                     throw task.Exception;
                 }
@@ -283,6 +290,36 @@ namespace kang.firebase.Leaderboard
             });
 
         }
+        private void OnDisable()
+        {
+            if(currentNewScoreQuery!= null)
+            {
+                currentNewScoreQuery.ChildRemoved -= OnscoreRemove;
+            }
+        }
+        private void OnscoreRemove(object sender, ChildChangedEventArgs args)
+        {
+            if (args.Snapshot == null || !args.Snapshot.Exists)
+            {
+                return;
+            }
+
+        }
+        public void RemoveUserScore(string userId)
+        {
+
+            if(currentNewScoreQuery != null)
+            {
+                currentNewScoreQuery.ChildRemoved -= OnscoreRemove;
+            }
+
+
+            databaseRef.Child(AllScoreDataPath).Child(userId).RemoveValueAsync();
+   
+           
+
+           
+        }
         private void SetTopScores()
         {
             topScores.Clear();
@@ -307,6 +344,10 @@ namespace kang.firebase.Leaderboard
             {
                 GetIntialTopScores(Int64.MaxValue);
             }
+        }
+        public void RemoveScore()
+        {
+            RemoveUserScore(userIdInputField.text);
         }
 
     }

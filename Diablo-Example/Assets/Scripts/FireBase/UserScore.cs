@@ -79,7 +79,10 @@ public class UserScore
     }
     public Dictionary<string , object> ToDictionary()//Json으로 변환하기 위해서 
     {
-        return new Dictionary<string, object>() {
+
+
+        return
+            new Dictionary<string, object>(){
             {userIdPath,userId },
             {userNamePath , userName },
             {scorePath , score },
