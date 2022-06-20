@@ -243,10 +243,10 @@ namespace kang.firebase.Leaderboard
         {
             gettingTopScores = true;
 
-            var query = databaseRef.Child(AllScoreDataPath).OrderByChild("score");
-            query = query.LimitToLast(20);
+            //var query = databaseRef.Child(AllScoreDataPath).OrderByChild("score");
+            //query = query.EndAt(batchEnd).LimitToLast(20);
 
-            query.GetValueAsync().ContinueWith(task =>
+            databaseRef.Child(AllScoreDataPath).OrderByChild("score").EndAt(batchEnd).LimitToLast(20).GetValueAsync().ContinueWith(task =>
             {
                 if(task.Exception != null)
                 {

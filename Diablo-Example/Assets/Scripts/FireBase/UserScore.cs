@@ -43,7 +43,7 @@ public class UserScore
         long score;
         if(Int64.TryParse(record.Child(scorePath).Value.ToString(),out score))
         {
-            this.score = this.score;
+            this.score = score;
         }
         else
         {

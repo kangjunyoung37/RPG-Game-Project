@@ -59,7 +59,7 @@ namespace kang.firebase.Leaderboard
         {
             var scores = args.scores;
 
-            for(var i = 0; i< Mathf.Min(scores.Count, scoreObjects.Count); i++)
+            for(var i = 0; i<= Mathf.Min(scores.Count, scoreObjects.Count); i++)
             {
                 var score = scores[i];
 
