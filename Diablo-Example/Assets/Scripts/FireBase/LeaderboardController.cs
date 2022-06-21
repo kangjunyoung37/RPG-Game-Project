@@ -8,7 +8,7 @@ using Firebase.Unity.Editor;
 using System.Threading.Tasks;
 using System.Linq;
 using TMPro;
-using Firebase.Storage;
+
 
 namespace kang.firebase.Leaderboard
 {
@@ -250,10 +250,10 @@ namespace kang.firebase.Leaderboard
         {
             gettingTopScores = true;
 
-            //var query = databaseRef.Child(AllScoreDataPath).OrderByChild("score");
+            //var query = databaseRef.Child(AllScoreDataPath).OrderByChild(UserScore.userIdPath).EndAt("e");
             //query = query.EndAt(batchEnd).LimitToLast(20);
 
-            databaseRef.Child(AllScoreDataPath).OrderByChild("score").EndAt(batchEnd).LimitToLast(20).GetValueAsync().ContinueWith(task =>
+            databaseRef.Child(AllScoreDataPath).GetValueAsync().ContinueWith(task =>
             {
                 if(task.Exception != null)
                 {
@@ -285,40 +285,27 @@ namespace kang.firebase.Leaderboard
                         }
                     }
                 
-                }
+                    }
                 SetTopScores();
             });
 
         }
-        private void OnDisable()
-        {
-            if(currentNewScoreQuery!= null)
-            {
-                currentNewScoreQuery.ChildRemoved -= OnscoreRemove;
-            }
-        }
-        private void OnscoreRemove(object sender, ChildChangedEventArgs args)
-        {
-            if (args.Snapshot == null || !args.Snapshot.Exists)
-            {
-                return;
-            }
 
-        }
+
         public void RemoveUserScore(string userId)
         {
-
-            if(currentNewScoreQuery != null)
+            databaseRef.Child(AllScoreDataPath).Child(userId).RemoveValueAsync().ContinueWith(task =>
             {
-                currentNewScoreQuery.ChildRemoved -= OnscoreRemove;
-            }
+                if (task.Exception != null)
+                {
+
+                    Debug.LogWarning("Exception removing scroe:" + task.Exception);
+                    return;
+                }
+                
 
 
-            databaseRef.Child(AllScoreDataPath).Child(userId).RemoveValueAsync();
-   
-           
-
-           
+            });       
         }
         private void SetTopScores()
         {

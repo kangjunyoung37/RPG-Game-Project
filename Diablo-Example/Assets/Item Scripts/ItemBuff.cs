@@ -3,39 +3,51 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using kang.Core;
+using Newtonsoft.Json;
 namespace kang.InventorySystem.Items
 {
 
 
 
-[Serializable]
-public class ItemBuff : IModifier
+    [Serializable]
+    public class ItemBuff : IModifier
     {
-    public AttributeType state;
-    public int value;
-    [SerializeField]
-    private int min;
-    [SerializeField]
-    private int max;
+        public AttributeType state;
+        public int value;
+        [SerializeField ,JsonProperty]
+        private int min;
+        [SerializeField ,JsonProperty]
+        private int max;
 
-    public int Min => min;
-    public int Max => max;
+        [JsonIgnore]
+        public int Min => min;
+        [JsonIgnore]
+        public int Max => max;
 
-    public ItemBuff(int min , int max)
-    {
-        this.min = min;
-        this.max = max;
+        [JsonConstructor]
+        public ItemBuff(int min, int max,int value)
+        {
+            this.min = min;
+            this.max = max;
+            this.value = value;
 
-        GenerateValue();
+        }
+
+        public ItemBuff(int min , int max)
+        {
+            this.min = min;
+            this.max = max;
+
+            GenerateValue();
+        }
+        public void GenerateValue()
+        {
+            value = UnityEngine.Random.Range(min, max);
+        }
+         public void AddValue(ref int v)
+        {
+            v += value;
+        }
+
     }
-    public void GenerateValue()
-    {
-        value = UnityEngine.Random.Range(min, max);
-    }
-     public void AddValue(ref int v)
-    {
-        v += value;
-    }
-
-}
 }

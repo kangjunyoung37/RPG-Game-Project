@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using kang.InventorySystem.Items;
+using Newtonsoft.Json;
 namespace kang.InventorySystem.Inventory {
 
 [Serializable]
@@ -21,6 +22,7 @@ public class InventorySlot
     public Action<InventorySlot> OnPostUpdat;
     public Item item;
     public int amount;
+    [JsonIgnore]
     public ItemObject ItemObject
     {
         get

@@ -2,11 +2,22 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Newtonsoft.Json;
 
+[Serializable]
+public class PlayerLevelData
+{
+    public int level;
+    public int exp;
+  
+}
 [CreateAssetMenu(fileName = "New Stats", menuName = "Stats System/New Character Stats New")]
 public class StatsObject : ScriptableObject
 {
+   
     public Attribute[] attributes;
+    [JsonProperty]
+    public PlayerLevelData levelData = new PlayerLevelData();
     public int level;
     public int exp;
     public int Health
@@ -18,6 +29,22 @@ public class StatsObject : ScriptableObject
     {
         get;
         set;
+    }
+    public int Exp
+    {
+        get => levelData.exp;
+        set
+        {
+            levelData.exp = value;
+        }
+    }
+    public int Level
+    {
+        get => levelData.level;
+        set
+        {
+            levelData.level = value;
+        }
     }
     public float HealthPercentage
     {
@@ -137,4 +164,15 @@ public class StatsObject : ScriptableObject
         return Mana;
 
     }
+    public string ToJson()
+    {
+        return JsonConvert.SerializeObject(levelData, Formatting.Indented);
+    }
+    public void FromJson(string jsonString)
+    {
+        PlayerLevelData newLevelData = JsonConvert.DeserializeObject<PlayerLevelData>(jsonString);
+        Level = newLevelData.level;
+        Exp = newLevelData.exp;
+    }
 }
+

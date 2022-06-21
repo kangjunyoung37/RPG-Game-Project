@@ -4,6 +4,7 @@ using UnityEngine;
 using kang.InventorySystem.Items;
 using System.Linq;
 using System;
+using Newtonsoft.Json;
 namespace kang.InventorySystem.Inventory
 {
 
@@ -27,6 +28,20 @@ namespace kang.InventorySystem.Inventory
         public Action<ItemObject> OnUseItem;
         public InventorySlot[] Slots => container.slots;
 
+        public string ToJson()
+        {
+            string jsonString = JsonConvert.SerializeObject(container, Formatting.Indented);
+            return jsonString;
+        }
+        public void FromJson(string jsonString)
+        {
+            Inventory newContainer = JsonConvert.DeserializeObject<Inventory>(jsonString);
+            Debug.Log("from json: " + newContainer.slots.Length);
+            for (int i = 0; i < Slots.Length; i++)
+            {
+                Slots[i].UpdateSlot(newContainer.slots[i].item, newContainer.slots[i].amount);
+            }
+        }
         public int EmptySlotCount
         {
             get
