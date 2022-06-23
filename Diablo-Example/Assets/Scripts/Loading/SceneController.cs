@@ -26,7 +26,7 @@ public class SceneController : MonoBehaviour
                 {
                     go = new GameObject("SceneController");
 
-                    SceneController sceneController = go.GetComponent<SceneController>();
+                    SceneController sceneController = go.AddComponent<SceneController>();
                     return sceneController;
                 }
                 else
@@ -71,7 +71,7 @@ public class SceneController : MonoBehaviour
     }
     public void OnSceneLoad(Scene scene, LoadSceneMode loadSceneMode)
     {
-
+        Debug.Log(scene.name + " " + loadSceneMode);
     }
     public void OnSceneUnloaded(Scene scene)
     {

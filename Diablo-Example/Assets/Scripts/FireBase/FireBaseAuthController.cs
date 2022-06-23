@@ -6,7 +6,7 @@ using Firebase;
 using Firebase.Auth;
 
 
-public class FireBaseAuthController 
+public class FireBaseAuthController
 {
 
     private static FireBaseAuthController instance = null;
@@ -17,7 +17,13 @@ public class FireBaseAuthController
     private string displayName;
     private string emailAddress;
     private Uri photoUrl;
+    private bool isLogin = false;
 
+    public bool IsLgin
+    {
+        get { return isLogin; }
+        
+    }
     public Action<bool> OnChangedLoginState;
     public static FireBaseAuthController Instance
     {
@@ -106,9 +112,11 @@ public class FireBaseAuthController
 
 
             FirebaseUser newUser = task.Result;
-            Debug.LogFormat("Firebase signed in successfully: {0} ({1})", newUser.DisplayName, newUser.UserId);
+            isLogin = true;
+            Debug.LogFormat("Firebase signed in successfully: {0} ({1}) {2}", newUser.DisplayName, newUser.UserId,isLogin);
             SceneController.Instance.LoadScene(SceneNameConstants.LoadingScene);
         });
+        
     }
     public void SignOut()
     {
