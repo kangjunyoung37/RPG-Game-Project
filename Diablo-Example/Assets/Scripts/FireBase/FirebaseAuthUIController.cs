@@ -28,7 +28,7 @@ public class FirebaseAuthUIController : MonoBehaviour
         string password = passwordInputField.text;
 
         FireBaseAuthController.Instance.SingIn(email, password);
-        
+
     }
     public void SignOut()
     {

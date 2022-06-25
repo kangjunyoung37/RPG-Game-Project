@@ -7,6 +7,7 @@ public class LoadingScene : MonoBehaviour
 {
     const float TextUpdateInterval = 1.0f;
     const string LoadingTextValue = "...";
+    const float NextSceneInterval = 3.0f;
     
 
     [SerializeField]
@@ -14,6 +15,12 @@ public class LoadingScene : MonoBehaviour
 
     int TextIndex = 0;
     float LastUpdateTime;
+    float LoadingTime;
+    private void Start()
+    {
+        LoadingTime = Time.time;
+    }
+
 
     void Update()
     {
@@ -31,6 +38,11 @@ public class LoadingScene : MonoBehaviour
 
 
             LastUpdateTime = currentTime;
+        }
+        
+        if (currentTime - LoadingTime > NextSceneInterval)
+        {
+            SceneController.Instance.LoadScene(SceneNameConstants.MainScene);
         }
     }
 }

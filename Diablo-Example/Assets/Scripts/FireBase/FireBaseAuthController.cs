@@ -19,10 +19,12 @@ public class FireBaseAuthController
     private Uri photoUrl;
     private bool isLogin = false;
 
-    public bool IsLgin
+    public bool IsLogin
     {
-        get { return isLogin; }
-        
+        get
+        {
+            return isLogin;
+        }
     }
     public Action<bool> OnChangedLoginState;
     public static FireBaseAuthController Instance
@@ -110,13 +112,16 @@ public class FireBaseAuthController
                 return;
             }
 
-
             FirebaseUser newUser = task.Result;
             isLogin = true;
             Debug.LogFormat("Firebase signed in successfully: {0} ({1}) {2}", newUser.DisplayName, newUser.UserId,isLogin);
-            SceneController.Instance.LoadScene(SceneNameConstants.LoadingScene);
+            
+            
         });
-        
+        if(isLogin)
+        {
+            SceneController.Instance.LoadScene(SceneNameConstants.LoadingScene);
+        }
     }
     public void SignOut()
     {
