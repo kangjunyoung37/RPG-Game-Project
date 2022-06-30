@@ -152,6 +152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80eb77cbd9720cc49b007fa03a88a4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerStats: {fileID: 11400000, guid: e0a55a8c6f81c614dbae808702fad2cf, type: 2}
+  playerEquipment: {fileID: 11400000, guid: c15d7e5ccca7a264fac361836efc3a44, type: 2}
+  playerInventory: {fileID: 11400000, guid: 6ca1c7864af1e154fb6ff33d591296fa, type: 2}
   LoadingText: {fileID: 1301539602}
 --- !u!4 &24344418
 Transform:
