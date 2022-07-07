@@ -155,6 +155,9 @@ MonoBehaviour:
   playerStats: {fileID: 11400000, guid: e0a55a8c6f81c614dbae808702fad2cf, type: 2}
   playerEquipment: {fileID: 11400000, guid: c15d7e5ccca7a264fac361836efc3a44, type: 2}
   playerInventory: {fileID: 11400000, guid: 6ca1c7864af1e154fb6ff33d591296fa, type: 2}
+  initPlayerStates: {fileID: 11400000, guid: 36091daad897d9240acfc11c94a0681a, type: 2}
+  initInitPlayerEquipment: {fileID: 11400000, guid: 112d4e36559c9814e8009f3902ecf1db, type: 2}
+  initInitPlayerInventory: {fileID: 11400000, guid: 4abdf5359ccc4c44295b36da097c0a99, type: 2}
   LoadingText: {fileID: 1301539602}
 --- !u!4 &24344418
 Transform:

@@ -11,6 +11,7 @@ public class LoadingScene : MonoBehaviour
     const string LoadingTextValue = "...";
     const float NextSceneInterval = 3.0f;
 
+    private bool exist = true;
     private DatabaseReference databaseRef;
     private string UserDataPath => "users";// /users/
     private string StatsDataPath => "stats";// /users/uid/stats
@@ -20,6 +21,10 @@ public class LoadingScene : MonoBehaviour
     public StatsObject playerStats;
     public InventoryObject playerEquipment;
     public InventoryObject playerInventory;
+
+    public StatsObject initPlayerStates;
+    public InventoryObject initInitPlayerEquipment;
+    public InventoryObject initInitPlayerInventory;
 
     [SerializeField]
     private TMP_Text LoadingText;
@@ -31,8 +36,9 @@ public class LoadingScene : MonoBehaviour
     {
         databaseRef = FirebaseDatabase.DefaultInstance.RootReference;
         LoadingTime = Time.time;
-        OnclickedLoad();
-
+        Check();
+     
+       
     }
 
 
@@ -120,5 +126,97 @@ public class LoadingScene : MonoBehaviour
             Debug.LogFormat("Load Inventory data in successfully : {0} {1}", userId, snapshot.GetRawJsonValue());
         });
         Debug.Log("OK");
+    }
+    public void OnClickedSave()
+    {
+        var userId = FireBaseAuthController.Instance.UserId;
+        if (userId == string.Empty)
+        {
+            return;
+        }
+        string statsJson = initPlayerStates.ToJson();
+        databaseRef.Child(UserDataPath).Child(userId).Child(StatsDataPath).SetRawJsonValueAsync(statsJson).ContinueWith(task =>
+        {
+            if (task.IsCanceled)
+            {
+                Debug.LogError("Save user data was canceled");
+                return;
+            }
+            if (task.IsFaulted)
+            {
+                Debug.LogError("Save user data encouneterd an error : " + task.Exception);
+                return;
+            }
+            Debug.LogFormat("Save user data in successfully : {0} {1}", userId, statsJson);
+        }
+
+        );
+        string equipmentJson = initInitPlayerEquipment.ToJson();
+        databaseRef.Child(UserDataPath).Child(userId).Child(EquipmentDataPath).SetRawJsonValueAsync(equipmentJson).ContinueWith(task =>
+        {
+            if (task.IsCanceled)
+            {
+                Debug.LogError("Save Equipment data was canceled");
+                return;
+            }
+            if (task.IsFaulted)
+            {
+                Debug.LogError("Save Equipment data encouneterd an error : " + task.Exception);
+                return;
+            }
+            Debug.LogFormat("Save Equipment data in successfully : {0} {1}", userId, statsJson);
+        });
+        string inventoryJson = initInitPlayerInventory.ToJson();
+        databaseRef.Child(UserDataPath).Child(userId).Child(InventoryDataPath).SetRawJsonValueAsync(inventoryJson).ContinueWith(task =>
+        {
+            if (task.IsCanceled)
+            {
+                Debug.LogError("Save Inventory data was canceled");
+                return;
+            }
+            if (task.IsFaulted)
+            {
+                Debug.LogError("Save Inventory data encouneterd an error : " + task.Exception);
+                return;
+            }
+            Debug.LogFormat("Save Inventory data in successfully : {0} {1}", userId, statsJson);
+        });
+    }
+    public void Check()
+    {
+        var userId = FireBaseAuthController.Instance.UserId;
+        databaseRef.Child(UserDataPath).Child(userId).Child(StatsDataPath).GetValueAsync().ContinueWith(task =>
+        {
+            if(task.IsFaulted)
+            {
+                Debug.LogError("Don't have data");
+                
+            }
+            else if(task.IsCompleted)
+            {
+                Debug.Log("You Have data");
+               
+            }
+            DataSnapshot snapshot = task.Result;
+            
+            if(snapshot.Value== null)
+            {
+                exist = false;
+            }
+            else
+            {
+                exist = true;
+            }
+            if (exist)
+            {
+                OnclickedLoad();
+            }
+            if (!exist)
+            {
+                OnClickedSave();
+                OnclickedLoad();
+            }
+        });
+       
     }
 }
