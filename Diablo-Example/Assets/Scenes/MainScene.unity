@@ -1197,7 +1197,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 20}
+  m_SizeDelta: {x: 20, y: 5.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &264434514
 MonoBehaviour:
@@ -2028,7 +2028,7 @@ MonoBehaviour:
   delopmentDescription: 
   animationIndex: 0
   priority: 0
-  damage: 2
+  damage: 5
   range: 1.5
   coolTime: 0
   effectPrefab: {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7, type: 3}

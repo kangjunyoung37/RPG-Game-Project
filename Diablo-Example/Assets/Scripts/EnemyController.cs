@@ -37,9 +37,11 @@ namespace kang.Characters
         public int maxHealth = 100;
         public int health;
 
+        private Animator animator;
         [SerializeField]
         private NPCBattleUI battleUI;
 
+        private int Damaging = Animator.StringToHash("Damaging");
         #endregion Variables
 
         #region Unity Methods
@@ -54,8 +56,8 @@ namespace kang.Characters
             stateMachine.AddState(new DeadState());
             InitAttackBehaviour();
             fov = GetComponent<FiledOfView>();
-           
-            
+            animator = GetComponent<Animator>();
+
             health = maxHealth;
             if(battleUI)
             {
@@ -203,13 +205,14 @@ namespace kang.Characters
                 battleUI.CreateDamageText(damage);
             }
 
-            if(IsAlive)
+            if (IsAlive)
             {
-                //animator?.SetTrigger(hitTriggerHash);
+                animator.SetTrigger(Damaging);
             }
+
             else
             {
-                if(battleUI != null)
+                if (battleUI != null)
                 {
                     battleUI.enabled = false;
                 }
